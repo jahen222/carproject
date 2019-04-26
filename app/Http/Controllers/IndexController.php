@@ -14,4 +14,9 @@ class IndexController extends Controller
 
         return view('main_page', compact('categories', 'recommendedProducts'));
     }
+
+    public function home(){
+
+        return view('home');
+    }
 }
