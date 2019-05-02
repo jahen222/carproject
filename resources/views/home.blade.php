@@ -39,126 +39,216 @@ Purchase: http://themeforest.net/user/kamleshyadav
 </head>
 
 <body>
-    <!------ Preloader Start ------>
-    <div id="preloader">
-        <div id="status">
-            <img src="{{ asset('src/impelcarhtml-101/images/logo.png') }}" alt="" />
-            <div class="loader">
-                Loading...
-                <div class="ball"></div>
-                <div class="ball"></div>
-                <div class="ball"></div>
-            </div>
-        </div>
-    </div>
     <!------ Header Start ------>
-    <div class="impl_header_wrapper">
-        <div class="impl_logo">
-            <a href="index.html"><img src="{{ asset('src/impelcarhtml-101/images/logo.png') }}" alt="Logo" class="img-fluid"></a>
+
+    <section class="curve_svg">
+        <!------ Left menu header ------>
+        <div class="col-md-3 justify-content-center float-left menu-left">
+            <nav class="nav flex-column" id="menu-lateral">
+                <a class="nav-link" href="#">
+                    <div class="loading hide">
+                        <div class="loading-bar"></div>
+                        <div class="loading-bar"></div>
+                        <div class="loading-bar"></div>
+                    </div>
+                    Inicio
+                </a>
+                <a class="nav-link" href="#">
+                    <div class="loading hide">
+                        <div class="loading-bar"></div>
+                        <div class="loading-bar"></div>
+                        <div class="loading-bar"></div>
+                    </div>
+                    Tienda
+                </a>
+                <a class="nav-link" href="#">
+                    <div class="loading hide">
+                        <div class="loading-bar"></div>
+                        <div class="loading-bar"></div>
+                        <div class="loading-bar"></div>
+                    </div>
+                    Servicios
+                </a>
+                <a class="nav-link" href="#">
+                    <div class="loading hide">
+                        <div class="loading-bar"></div>
+                        <div class="loading-bar"></div>
+                        <div class="loading-bar"></div>
+                    </div>
+                    Empresa
+                </a>
+                <a class="nav-link" href="#">
+                    <div class="loading hide">
+                        <div class="loading-bar"></div>
+                        <div class="loading-bar"></div>
+                        <div class="loading-bar"></div>
+                    </div>
+                    Blog
+                </a>
+                <a class="nav-link" href="#">
+                    <div class="loading hide">
+                        <div class="loading-bar"></div>
+                        <div class="loading-bar"></div>
+                        <div class="loading-bar"></div>
+                    </div>
+                    Contacto
+                </a>
+                <a class="nav-link" href="#">
+                    <div class="loading hide">
+                        <div class="loading-bar"></div>
+                        <div class="loading-bar"></div>
+                        <div class="loading-bar"></div>
+                    </div>
+                    FAQ
+                </a>
+            </nav>
         </div>
-        <div class="impl_top_header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12">
-                        <div class="impl_top_info">
-                            <ul class="impl_header_social">
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                            </ul>
-                            <p class="impl_header_time"><i class="fa fa-clock-o" aria-hidden="true"></i> Working Hours - 6 AM To 8 PM <span>sunday closed</span></p>
-                            <ul class="impl_header_icons">
-                                <li class="impl_search"><span><i class="fa fa-search" aria-hidden="true"></i></span></li>
-                                <li><a href="compare.html"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
-                                <li class="cart-popup"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-                                    <!--shopping cart box-->
-                                    <div class="cart-box">
-                                        <div class="popup-container">
-                                            <div class="cart-entry">
-                                                <a href="#" class="image">
-												<img src="http://via.placeholder.com/70x60" alt="">
-											</a>
-                                                <div class="content">
-                                                    <a href="#" class="title">Serpent</a>
-                                                    <p class="quantity">Quantity: 1</p>
-                                                    <span class="price">$4500.00</span>
-                                                </div>
-                                                <div class="button-x">
-                                                    <i class="fa fa-times-circle" aria-hidden="true"></i>
-                                                </div>
-                                            </div>
-                                            <div class="cart-entry">
-                                                <a href="#" class="image">
-												<img src="http://via.placeholder.com/70x60" alt="">
-											</a>
-                                                <div class="content">
-                                                    <a href="#" class="title">Empire</a>
-                                                    <p class="quantity">Quantity: 1</p>
-                                                    <span class="price">$900.00</span>
-                                                </div>
-                                                <div class="button-x">
-                                                    <i class="fa fa-times-circle" aria-hidden="true"></i>
-                                                </div>
-                                            </div>
-                                            <div class="summary">
-                                                <div class="subtotal">Sub Total</div>
-                                                <div class="price-s">$5100.0</div>
-                                            </div>
-                                            <div class="cart-buttons">
-                                                <a href="checkout.html" class="btn impl_btn">View Cart</a>
-                                                <a href="checkout.html" class="btn impl_btn">Checkout</a>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li><a href="#signin" data-toggle="modal"><i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
-                            </ul>
-                            <div class="impl_search_overlay">
-                                <div class="impl_search_area">
-                                    <div class="srch_inner">
-                                        <form action="#">
-                                            <input type="text" placeholder="Search here... ">
-                                            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                                        </form>
-                                        <div class="srch_close_btn">
-                                            <span class="srch_close_btn_icon"><i class="fa fa-times" aria-hidden="true"></i></span>
-                                        </div>
-                                    </div>
+        <!------ Logo header ------>
+        <div class="impl_logo">
+            <a href="{{ url('/') }}"><img src="{{ asset('src/maracucho/img/logo.png') }}" alt="Logo" class="img-fluid"></a>
+        </div>
+        <!------ Right menu header ------>
+        <div class="impl_top_info">
+            <ul class="impl_header_icons">
+                <li class="impl_search"><span><i class="fa fa-search" aria-hidden="true"></i></span></li>
+                <li><a href="compare.html"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+                <li class="cart-popup"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    <!--shopping cart box-->
+                    <div class="cart-box">
+                        <div class="popup-container">
+                            <div class="cart-entry">
+                                <a href="#" class="image">
+                                    <img src="http://via.placeholder.com/70x60" alt="">
+                                </a>
+                                <div class="content">
+                                    <a href="#" class="title">Serpent</a>
+                                    <p class="quantity">Quantity: 1</p>
+                                    <span class="price">$4500.00</span>
+                                </div>
+                                <div class="button-x">
+                                    <i class="fa fa-times-circle" aria-hidden="true"></i>
                                 </div>
                             </div>
+                            <div class="cart-entry">
+                                <a href="#" class="image">
+                                    <img src="http://via.placeholder.com/70x60" alt="">
+                                </a>
+                                <div class="content">
+                                    <a href="#" class="title">Empire</a>
+                                    <p class="quantity">Quantity: 1</p>
+                                    <span class="price">$900.00</span>
+                                </div>
+                                <div class="button-x">
+                                    <i class="fa fa-times-circle" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <div class="subtotal">Sub Total</div>
+                                <div class="price-s">$5100.0</div>
+                            </div>
+                            <div class="cart-buttons">
+                                <a href="checkout.html" class="btn impl_btn">View Cart</a>
+                                <a href="checkout.html" class="btn impl_btn">Checkout</a>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#signin" data-toggle="modal"><i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+            </ul>
+            <div class="impl_search_overlay">
+                <div class="impl_search_area">
+                    <div class="srch_inner">
+                        <form action="#">
+                            <input type="text" placeholder="Search here... ">
+                            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </form>
+                        <div class="srch_close_btn">
+                            <span class="srch_close_btn_icon"><i class="fa fa-times" aria-hidden="true"></i></span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!------ Search bar header ------>
+        <div class="col-md-4 text-center search-panel">
+            <form>
+                <fieldset class="form-group">
+                    <label for="search-box">¿Qué estás buscando?</label>
+                    <input type="text" class="main-input" id="search-box" name="busqueda">
+                </fieldset>
+            </form>
+        </div>
+        <br>
+        <!------ Category slider bar header ------>
+        <br>
+        <div id="menu-slider" class="col-md-6 cat-carousel slide" data-ride="carousel">
+    				<div class="carousel-inner">
+      					<div class="carousel-item active">
+        						<ul class="nav nav-justified">
+          							<li class="nav-item">
+          						      <a href="#">Chasis</a>
+          							</li>
+          							<li class="nav-item">
+          								  <a href="#">Motor</a>
+          							</li>
+          							<li class="nav-item">
+            								<a href="#">Partes y Carrocería</a>
+          							</li>
+        						</ul>
+      					</div>
+      					<div class="carousel-item">
+        						<ul class="nav nav-justified">
+          							<li class="nav-item">
+          								  <a href="#">Sistema Eléctrico</a>
+          							</li>
+          							<li class="nav-item">
+          								  <a href="#">Herramientas</a>
+          							</li>
+          							<li class="nav-item">
+          								  <a href="#">Limpieza y Mantenimiento</a>
+          							</li>
+          							<li class="nav-item">
+          								  <a href="#">Accesorios Electrónicos</a>
+          							</li>
+        						</ul>
+      					</div>
+      					<a class="carousel-control-prev" href="#menu-slider" role="button" data-slide="prev">
+          					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          					<span class="sr-only">Previous</span>
+                </a>
+      					<a class="carousel-control-next" href="#menu-slider" role="button" data-slide="next">
+          					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+          					<span class="sr-only">Next</span>
+      					</a>
+    				</div>
+  			</div>
         <!--sign-in form-->
         <div class="modal" id="signin">
             <div class="impl_signin">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">×</span>
-			</button>
+  			             <span aria-hidden="true">×</span>
+  		          </button>
                 <div class="impl_sign_form">
                     <h1>Sign In</h1>
                     <div class="form-group">
                         <input type="text" placeholder="Email" class="form-control">
                         <span class="form_icon">
-						<i class="fa fa-envelope" aria-hidden="true"></i>
-					</span>
+  					                 <i class="fa fa-envelope" aria-hidden="true"></i>
+  				              </span>
                     </div>
                     <div class="form-group">
                         <input type="password" placeholder="Password" class="form-control">
                         <span class="form_icon">
-					<i class="fa fa-lock" aria-hidden="true"></i>
-					</span>
+  				                  <i class="fa fa-lock" aria-hidden="true"></i>
+  				              </span>
                     </div>
                     <div class="forget_password">
                         <div class="remember_checkbox">
                             <label>Keep me signed in
-							<input type="checkbox">
-							<span class="checkmark"></span>
-						</label>
+  						                  <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
                         </div>
                         <a href="#">Forgot Password ?</a>
                     </div>
@@ -179,33 +269,33 @@ Purchase: http://themeforest.net/user/kamleshyadav
         <div class="modal" id="signup">
             <div class="impl_signin">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">×</span>
-			</button>
+                    <span aria-hidden="true">×</span>
+  		          </button>
                 <div class="impl_sign_form">
                     <h1>Sign up</h1>
                     <div class="form-group">
                         <input type="text" placeholder="Username" class="form-control">
                         <span class="form_icon">
-						<i class="fa fa-user" aria-hidden="true"></i>
-					</span>
+  					                <i class="fa fa-user" aria-hidden="true"></i>
+  				              </span>
                     </div>
                     <div class="form-group">
                         <input type="text" placeholder="Email" class="form-control">
                         <span class="form_icon">
-						<i class="fa fa-envelope" aria-hidden="true"></i>
-					</span>
+  					                <i class="fa fa-envelope" aria-hidden="true"></i>
+  				             </span>
                     </div>
                     <div class="form-group">
                         <input type="password" placeholder="Password" class="form-control">
                         <span class="form_icon">
-					<i class="fa fa-lock" aria-hidden="true"></i>
-					</span>
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+  				              </span>
                     </div>
                     <div class="form-group">
                         <input type="password" placeholder="Confirm Password" class="form-control">
                         <span class="form_icon">
-					<i class="fa fa-lock" aria-hidden="true"></i>
-					</span>
+                				    <i class="fa fa-lock" aria-hidden="true"></i>
+                				</span>
                     </div>
                     <a href="#" class="impl_btn">sign up</a>
                     <p>Dont Have An Account? <a href="#signup" data-toggle="modal" class="impl_modal">Sign Up</a></p>
@@ -220,67 +310,12 @@ Purchase: http://themeforest.net/user/kamleshyadav
                 </div>
             </div>
         </div>
-        <!--menu start-->
-        <div class="impl_menu_wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12">
-                        <button class="impl_menu_btn">
-			<i class="fa fa-car" aria-hidden="true"></i>
-			<i class="fa fa-bars" aria-hidden="true"></i>
-		</button>
-                        <div class="impl_menu_inner">
-                            <div class="impl_logo_responsive">
-                                <a href="index.html"><img src="{{ asset('src/impelcarhtml-101/images/logo1.png') }}" alt="Logo" class="img-fluid"></a>
-                            </div>
-                            <a href="sell_step.html" class="impl_btn">Sell your car</a>
-                            <div class="impl_menu">
-                                <nav>
-                                    <div class="menu_cross">
-                                        <i class="fa fa-times" aria-hidden="true"></i>
-                                    </div>
-                                    <ul>
-                                        <li class="dropdown"><a href="javascript:;" class="active">home</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="index.html">Home version1</a></li>
-                                                <li><a href="home.html">Home version2</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="about.html">Company</a></li>
-                                        <li class="dropdown"><a href="javascript:;">Purchase car</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="purchase_new.html">New car</a></li>
-                                                <li><a href="purchase_used.html">old car</a></li>
-                                                <li><a href="purchase_new_single.html">New Car Single</a></li>
-                                                <li><a href="purchase_old_single.html">old car single</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="service.html">services</a></li>
-                                        <li class="dropdown"><a href="javascript:;">blog</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="blog_left_sidebar.html">blog left sidebar</a></li>
-                                                <li><a href="blog_right_sidebar.html">blog right sidebar</a></li>
-                                                <li><a href="blog_single.html">blog single</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown"><a href="javascript:;">pages</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="sell_step.html">Sell page</a></li>
-                                                <li><a href="compare.html">compare page</a></li>
-                                                <li><a href="checkout.html">checkout page</a></li>
-                                                <li><a href="error.html">404 page</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.html">Contact us</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        <!------ Curve Start ------>
+        <svg id="curve" data-name="Layer-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1416.99 148.01">
+            <path class="cls-1" d="M0,280.8S283.66,59,608.94,163.56s437.93,150.57,808,10.34V309.54H0V280.8Z" transform="translate(0-135.53)"/>
+        </svg>
+    </section>
+
     <!------ Slider Start ------>
     <div class="impl_slider_wrapper">
         <div id="rev_slider_28_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="parallax-zoom-slices" data-source="gallery" style="background:#000000;padding:0px;">
@@ -289,7 +324,7 @@ Purchase: http://themeforest.net/user/kamleshyadav
                     <li data-index="rs-66" data-transition="slotzoom-horizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="1000" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                         <div class="tp-caption tp-shape tp-shapewrapper " id="slide-2800-layer-7" data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="nowrap" data-type="shape" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames='[{"from":"opacity:0;","speed":500,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},{"speed":5000,"to":"opacity:0;","ease":"Power4.easeInOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5;background-color:rgba(0, 0, 0, 0.40);border-color:rgba(0, 0, 0, 0);border-width:0px;"> </div>
                         <!-- MAIN IMAGE -->
-                        <img src="http://via.placeholder.com/1920x864" alt="" title="homedefault-bg1" width="1920" height="1033" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                        <img src="{{ asset('src/pedro/Slider principal/JeepWrangler.jpg') }}" alt="" title="homedefault-bg1" width="1920" height="1033" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
                         <!-- LAYERS -->
                         <div id="rrzt_6" class="rev_row_zone rev_row_zone_top" style="z-index: 8;">
 
@@ -314,7 +349,7 @@ Purchase: http://themeforest.net/user/kamleshyadav
                     <!--slid2-->
                     <li data-index="rs-67" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="600" data-thumb="../../assets/images/woman2-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" data-slicey_shadow="0px 0px 0px 0px transparent">
                         <!-- MAIN IMAGE -->
-                        <img src="http://via.placeholder.com/1920x864" alt="" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Power2.easeInOut" data-scalestart="100" data-scaleend="150" data-rotatestart="0" data-rotateend="0" data-blurstart="20" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
+                        <img src="{{ asset('src/pedro/Slider principal/slider home.jpg') }}" alt="" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Power2.easeInOut" data-scalestart="100" data-scaleend="150" data-rotatestart="0" data-rotateend="0" data-blurstart="20" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
                         <!-- LAYER NR. 2 -->
                         <div class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme" id="slide-67-layer-10" data-x="['center','center','center','center']" data-hoffset="['151','228','224','117']" data-y="['middle','middle','middle','middle']" data-voffset="['-212','-159','71','-222']" data-width="['150','150','100','100']" data-height="['200','150','150','150']" data-whitespace="nowrap" data-type="shape" data-slicey_offset="250" data-slicey_blurstart="0" data-slicey_blurend="20" data-responsive_offset="on" data-frames='[{"delay":350,"speed":1000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"+3650","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6;background-color:rgba(0, 0, 0, 0.5);"> </div>
 
@@ -360,11 +395,109 @@ Purchase: http://themeforest.net/user/kamleshyadav
                         <a class="tp-caption rev-btn  tp-resizeme" href="#" target="_blank" id="slide-67-layer-8" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['80','50','20','5']" data-width="250" data-height="none" data-whitespace="nowrap" data-type="button" data-actions='' data-responsive_offset="on" data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:0.9;sY:0.9;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;fb:20px;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;fb:0;","style":"c:rgba(255,255,255,1);bs:solid;bw:0 0 0 0;"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[50,50,50,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[50,50,50,0]" style="cursor:pointer;text-decoration: none;z-index:19;line-height:45px;"><span class="impl_btn">GET STARTED </span></a>
                     </li>
 
+                    <!--slid3-->
+                    <li data-index="rs-68" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="600" data-thumb="../../assets/images/woman2-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" data-slicey_shadow="0px 0px 0px 0px transparent">
+                        <!-- MAIN IMAGE -->
+                        <img src="{{ asset('src/pedro/Slider principal/slider home26.jpg') }}" alt="" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Power2.easeInOut" data-scalestart="100" data-scaleend="150" data-rotatestart="0" data-rotateend="0" data-blurstart="20" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme" id="slide-68-layer-10" data-x="['center','center','center','center']" data-hoffset="['151','228','224','117']" data-y="['middle','middle','middle','middle']" data-voffset="['-212','-159','71','-222']" data-width="['150','150','100','100']" data-height="['200','150','150','150']" data-whitespace="nowrap" data-type="shape" data-slicey_offset="250" data-slicey_blurstart="0" data-slicey_blurend="20" data-responsive_offset="on" data-frames='[{"delay":350,"speed":1000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"+3650","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6;background-color:rgba(0, 0, 0, 0.5);"> </div>
+
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme" id="slide-68-layer-29" data-x="['center','center','center','center']" data-hoffset="['339','-442','104','-159']" data-y="['middle','middle','middle','middle']" data-voffset="['2','165','-172','219']" data-width="['250','250','150','150']" data-height="['150','150','100','100']" data-whitespace="nowrap" data-type="shape" data-slicey_offset="250" data-slicey_blurstart="0" data-slicey_blurend="20" data-responsive_offset="on" data-frames='[{"delay":400,"speed":1000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"+3600","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7;background-color:rgba(0, 0, 0, 0.5);"> </div>
+
+                        <!-- LAYER NR. 4 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme" id="slide-68-layer-12" data-x="['center','center','center','center']" data-hoffset="['162','216','-239','193']" data-y="['middle','middle','middle','middle']" data-voffset="['195','245','6','146']" data-width="['250','250','100','100']" data-height="150" data-whitespace="nowrap" data-type="shape" data-slicey_offset="250" data-slicey_blurstart="0" data-slicey_blurend="20" data-responsive_offset="on" data-frames='[{"delay":450,"speed":1000,"frame":"0","from":"opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"+3550","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 8;background-color:rgba(0, 0, 0, 0.5);"> </div>
+
+                        <!-- LAYER NR. 5 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme" id="slide-68-layer-34" data-x="['center','center','center','center']" data-hoffset="['-186','-119','273','-223']" data-y="['middle','middle','middle','middle']" data-voffset="['269','217','-121','69']" data-width="['300','300','150','150']" data-height="['200','200','150','150']" data-whitespace="nowrap" data-type="shape" data-slicey_offset="250" data-slicey_blurstart="0" data-slicey_blurend="20" data-responsive_offset="on" data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"+3500","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 9;background-color:rgba(0, 0, 0, 0.5);"> </div>
+
+                        <!-- LAYER NR. 6 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme" id="slide-68-layer-11" data-x="['center','center','center','center']" data-hoffset="['-325','292','162','-34']" data-y="['middle','middle','middle','middle']" data-voffset="['3','55','-275','-174']" data-width="150" data-height="['250','150','50','50']" data-whitespace="nowrap" data-type="shape" data-slicey_offset="250" data-slicey_blurstart="0" data-slicey_blurend="20" data-responsive_offset="on" data-frames='[{"delay":550,"speed":1000,"frame":"0","from":"opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"+3450","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 10;background-color:rgba(0, 0, 0, 0.5);"> </div>
+
+                        <!-- LAYER NR. 7 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme" id="slide-68-layer-27" data-x="['center','center','center','center']" data-hoffset="['-429','523','-190','-306']" data-y="['middle','middle','middle','middle']" data-voffset="['-327','173','181','480']" data-width="['250','250','150','150']" data-height="['300','300','150','150']" data-whitespace="nowrap" data-type="shape" data-slicey_offset="300" data-slicey_blurstart="0" data-slicey_blurend="20" data-responsive_offset="on" data-frames='[{"delay":320,"speed":1000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"+3680","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 11;background-color:rgba(0, 0, 0, 0.5);"> </div>
+
+                        <!-- LAYER NR. 8 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme" id="slide-68-layer-28" data-x="['center','center','center','center']" data-hoffset="['422','-409','208','225']" data-y="['middle','middle','middle','middle']" data-voffset="['-245','-72','294','-14']" data-width="['300','300','150','150']" data-height="['250','250','100','100']" data-whitespace="nowrap" data-type="shape" data-slicey_offset="300" data-slicey_blurstart="0" data-slicey_blurend="20" data-responsive_offset="on" data-frames='[{"delay":360,"speed":1000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"+3640","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 12;background-color:rgba(0, 0, 0, 0.5);"> </div>
+
+                        <!-- LAYER NR. 9 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme" id="slide-68-layer-30" data-x="['center','center','center','center']" data-hoffset="['549','-445','28','58']" data-y="['middle','middle','middle','middle']" data-voffset="['236','400','316','287']" data-width="['300','300','150','200']" data-height="['250','250','150','50']" data-whitespace="nowrap" data-type="shape" data-slicey_offset="300" data-slicey_blurstart="0" data-slicey_blurend="20" data-responsive_offset="on" data-frames='[{"delay":400,"speed":1000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"+3600","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13;background-color:rgba(0, 0, 0, 0.5);"> </div>
+
+                        <!-- LAYER NR. 10 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme" id="slide-68-layer-31" data-x="['center','center','center','center']" data-hoffset="['-522','492','-151','262']" data-y="['middle','middle','middle','middle']" data-voffset="['339','-180','330','-141']" data-width="['300','300','150','150']" data-height="['250','250','100','100']" data-whitespace="nowrap" data-type="shape" data-slicey_offset="300" data-slicey_blurstart="0" data-slicey_blurend="20" data-responsive_offset="on" data-frames='[{"delay":440,"speed":1000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"+3560","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 14;background-color:rgba(0, 0, 0, 0.5);"> </div>
+
+                        <!-- LAYER NR. 11 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme" id="slide-68-layer-32" data-x="['center','center','center','center']" data-hoffset="['-588','-375','-253','-207']" data-y="['middle','middle','middle','middle']" data-voffset="['72','-328','-172','-111']" data-width="['300','300','150','150']" data-height="['200','200','150','150']" data-whitespace="nowrap" data-type="shape" data-slicey_offset="300" data-slicey_blurstart="0" data-slicey_blurend="20" data-responsive_offset="on" data-frames='[{"delay":480,"speed":1000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"+3520","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 15;background-color:rgba(0, 0, 0, 0.5);"> </div>
+
+                        <!-- LAYER NR. 12 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme" id="slide-68-layer-33" data-x="['center','center','center','center']" data-hoffset="['-37','73','-76','-100']" data-y="['middle','middle','middle','middle']" data-voffset="['-401','-340','-293','-246']" data-width="['450','400','250','250']" data-height="['100','100','50','50']" data-whitespace="nowrap" data-type="shape" data-slicey_offset="250" data-slicey_blurstart="0" data-slicey_blurend="20" data-responsive_offset="on" data-frames='[{"delay":310,"speed":1000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"+3690","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 16;background-color:rgba(0, 0, 0, 0.5);"> </div>
+
+                        <!-- LAYER NR. 13 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme" id="slide-68-layer-35" data-x="['center','center','center','center']" data-hoffset="['186','38','116','17']" data-y="['middle','middle','middle','middle']" data-voffset="['363','402','190','395']" data-width="['350','400','250','250']" data-height="['100','100','50','50']" data-whitespace="nowrap" data-type="shape" data-slicey_offset="250" data-slicey_blurstart="0" data-slicey_blurend="20" data-responsive_offset="on" data-frames='[{"delay":340,"speed":1000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"+3660","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 17;background-color:rgba(0, 0, 0, 0.5);"> </div>
+
+                        <!-- LAYER NR. 14 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper " id="slide-68-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="nowrap" data-type="shape" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames='[{"delay":10,"speed":500,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":500,"frame":"999","to":"opacity:0;","ease":"Power4.easeOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 18;background-color:rgba(0, 0, 0, 0.5);"> </div>
+
+                        <!-- LAYER NR. 15 -->
+                        <div class="tp-caption   tp-resizeme" id="slide-68-layer-2" data-x="['center','center','center','center']" data-hoffset="['1','1','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-70','-70']" data-fontsize="['70','70','30','26']" data-lineheight="['80','70','40','30']" data-width="['none','none','481','360']" data-height="none" data-whitespace="['nowrap','nowrap','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:0.9;sY:0.9;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;fb:20px;","ease":"Power3.easeInOut"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 19; white-space: nowrap; font-size: 70px; line-height: 80px; font-weight: 700; color: #ffffff; letter-spacing: 0px;font-family: 'Raleway', sans-serif;text-transform:uppercase;">We're Your One Stop <br/> Destination for That !</div>
+                        <!-- LAYER NR. 17 -->
+                        <a class="tp-caption rev-btn  tp-resizeme" href="#" target="_blank" id="slide-68-layer-8" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['80','50','20','5']" data-width="250" data-height="none" data-whitespace="nowrap" data-type="button" data-actions='' data-responsive_offset="on" data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:0.9;sY:0.9;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;fb:20px;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;fb:0;","style":"c:rgba(255,255,255,1);bs:solid;bw:0 0 0 0;"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[50,50,50,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[50,50,50,0]" style="cursor:pointer;text-decoration: none;z-index:19;line-height:45px;"><span class="impl_btn">GET STARTED </span></a>
+                    </li>
+
+                    <!--slid4-->
+                    <li data-index="rs-69" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="600" data-thumb="../../assets/images/woman2-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" data-slicey_shadow="0px 0px 0px 0px transparent">
+                        <!-- MAIN IMAGE -->
+                        <img src="{{ asset('src/pedro/Slider principal/slider25.jpg') }}" alt="" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Power2.easeInOut" data-scalestart="100" data-scaleend="150" data-rotatestart="0" data-rotateend="0" data-blurstart="20" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme" id="slide-69-layer-10" data-x="['center','center','center','center']" data-hoffset="['151','228','224','117']" data-y="['middle','middle','middle','middle']" data-voffset="['-212','-159','71','-222']" data-width="['150','150','100','100']" data-height="['200','150','150','150']" data-whitespace="nowrap" data-type="shape" data-slicey_offset="250" data-slicey_blurstart="0" data-slicey_blurend="20" data-responsive_offset="on" data-frames='[{"delay":350,"speed":1000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"+3650","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6;background-color:rgba(0, 0, 0, 0.5);"> </div>
+
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme" id="slide-69-layer-29" data-x="['center','center','center','center']" data-hoffset="['339','-442','104','-159']" data-y="['middle','middle','middle','middle']" data-voffset="['2','165','-172','219']" data-width="['250','250','150','150']" data-height="['150','150','100','100']" data-whitespace="nowrap" data-type="shape" data-slicey_offset="250" data-slicey_blurstart="0" data-slicey_blurend="20" data-responsive_offset="on" data-frames='[{"delay":400,"speed":1000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"+3600","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7;background-color:rgba(0, 0, 0, 0.5);"> </div>
+
+                        <!-- LAYER NR. 4 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme" id="slide-69-layer-12" data-x="['center','center','center','center']" data-hoffset="['162','216','-239','193']" data-y="['middle','middle','middle','middle']" data-voffset="['195','245','6','146']" data-width="['250','250','100','100']" data-height="150" data-whitespace="nowrap" data-type="shape" data-slicey_offset="250" data-slicey_blurstart="0" data-slicey_blurend="20" data-responsive_offset="on" data-frames='[{"delay":450,"speed":1000,"frame":"0","from":"opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"+3550","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 8;background-color:rgba(0, 0, 0, 0.5);"> </div>
+
+                        <!-- LAYER NR. 5 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme" id="slide-69-layer-34" data-x="['center','center','center','center']" data-hoffset="['-186','-119','273','-223']" data-y="['middle','middle','middle','middle']" data-voffset="['269','217','-121','69']" data-width="['300','300','150','150']" data-height="['200','200','150','150']" data-whitespace="nowrap" data-type="shape" data-slicey_offset="250" data-slicey_blurstart="0" data-slicey_blurend="20" data-responsive_offset="on" data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"+3500","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 9;background-color:rgba(0, 0, 0, 0.5);"> </div>
+
+                        <!-- LAYER NR. 6 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme" id="slide-69-layer-11" data-x="['center','center','center','center']" data-hoffset="['-325','292','162','-34']" data-y="['middle','middle','middle','middle']" data-voffset="['3','55','-275','-174']" data-width="150" data-height="['250','150','50','50']" data-whitespace="nowrap" data-type="shape" data-slicey_offset="250" data-slicey_blurstart="0" data-slicey_blurend="20" data-responsive_offset="on" data-frames='[{"delay":550,"speed":1000,"frame":"0","from":"opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"+3450","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 10;background-color:rgba(0, 0, 0, 0.5);"> </div>
+
+                        <!-- LAYER NR. 7 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme" id="slide-69-layer-27" data-x="['center','center','center','center']" data-hoffset="['-429','523','-190','-306']" data-y="['middle','middle','middle','middle']" data-voffset="['-327','173','181','480']" data-width="['250','250','150','150']" data-height="['300','300','150','150']" data-whitespace="nowrap" data-type="shape" data-slicey_offset="300" data-slicey_blurstart="0" data-slicey_blurend="20" data-responsive_offset="on" data-frames='[{"delay":320,"speed":1000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"+3680","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 11;background-color:rgba(0, 0, 0, 0.5);"> </div>
+
+                        <!-- LAYER NR. 8 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme" id="slide-69-layer-28" data-x="['center','center','center','center']" data-hoffset="['422','-409','208','225']" data-y="['middle','middle','middle','middle']" data-voffset="['-245','-72','294','-14']" data-width="['300','300','150','150']" data-height="['250','250','100','100']" data-whitespace="nowrap" data-type="shape" data-slicey_offset="300" data-slicey_blurstart="0" data-slicey_blurend="20" data-responsive_offset="on" data-frames='[{"delay":360,"speed":1000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"+3640","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 12;background-color:rgba(0, 0, 0, 0.5);"> </div>
+
+                        <!-- LAYER NR. 9 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme" id="slide-69-layer-30" data-x="['center','center','center','center']" data-hoffset="['549','-445','28','58']" data-y="['middle','middle','middle','middle']" data-voffset="['236','400','316','287']" data-width="['300','300','150','200']" data-height="['250','250','150','50']" data-whitespace="nowrap" data-type="shape" data-slicey_offset="300" data-slicey_blurstart="0" data-slicey_blurend="20" data-responsive_offset="on" data-frames='[{"delay":400,"speed":1000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"+3600","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13;background-color:rgba(0, 0, 0, 0.5);"> </div>
+
+                        <!-- LAYER NR. 10 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme" id="slide-69-layer-31" data-x="['center','center','center','center']" data-hoffset="['-522','492','-151','262']" data-y="['middle','middle','middle','middle']" data-voffset="['339','-180','330','-141']" data-width="['300','300','150','150']" data-height="['250','250','100','100']" data-whitespace="nowrap" data-type="shape" data-slicey_offset="300" data-slicey_blurstart="0" data-slicey_blurend="20" data-responsive_offset="on" data-frames='[{"delay":440,"speed":1000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"+3560","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 14;background-color:rgba(0, 0, 0, 0.5);"> </div>
+
+                        <!-- LAYER NR. 11 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme" id="slide-69-layer-32" data-x="['center','center','center','center']" data-hoffset="['-588','-375','-253','-207']" data-y="['middle','middle','middle','middle']" data-voffset="['72','-328','-172','-111']" data-width="['300','300','150','150']" data-height="['200','200','150','150']" data-whitespace="nowrap" data-type="shape" data-slicey_offset="300" data-slicey_blurstart="0" data-slicey_blurend="20" data-responsive_offset="on" data-frames='[{"delay":480,"speed":1000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"+3520","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 15;background-color:rgba(0, 0, 0, 0.5);"> </div>
+
+                        <!-- LAYER NR. 12 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme" id="slide-69-layer-33" data-x="['center','center','center','center']" data-hoffset="['-37','73','-76','-100']" data-y="['middle','middle','middle','middle']" data-voffset="['-401','-340','-293','-246']" data-width="['450','400','250','250']" data-height="['100','100','50','50']" data-whitespace="nowrap" data-type="shape" data-slicey_offset="250" data-slicey_blurstart="0" data-slicey_blurend="20" data-responsive_offset="on" data-frames='[{"delay":310,"speed":1000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"+3690","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 16;background-color:rgba(0, 0, 0, 0.5);"> </div>
+
+                        <!-- LAYER NR. 13 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme" id="slide-69-layer-35" data-x="['center','center','center','center']" data-hoffset="['186','38','116','17']" data-y="['middle','middle','middle','middle']" data-voffset="['363','402','190','395']" data-width="['350','400','250','250']" data-height="['100','100','50','50']" data-whitespace="nowrap" data-type="shape" data-slicey_offset="250" data-slicey_blurstart="0" data-slicey_blurend="20" data-responsive_offset="on" data-frames='[{"delay":340,"speed":1000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"+3660","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 17;background-color:rgba(0, 0, 0, 0.5);"> </div>
+
+                        <!-- LAYER NR. 14 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper " id="slide-69-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="nowrap" data-type="shape" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames='[{"delay":10,"speed":500,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":500,"frame":"999","to":"opacity:0;","ease":"Power4.easeOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 18;background-color:rgba(0, 0, 0, 0.5);"> </div>
+
+                        <!-- LAYER NR. 15 -->
+                        <div class="tp-caption   tp-resizeme" id="slide-69-layer-2" data-x="['center','center','center','center']" data-hoffset="['1','1','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-70','-70']" data-fontsize="['70','70','30','26']" data-lineheight="['80','70','40','30']" data-width="['none','none','481','360']" data-height="none" data-whitespace="['nowrap','nowrap','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:0.9;sY:0.9;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;fb:20px;","ease":"Power3.easeInOut"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 19; white-space: nowrap; font-size: 70px; line-height: 80px; font-weight: 700; color: #ffffff; letter-spacing: 0px;font-family: 'Raleway', sans-serif;text-transform:uppercase;">We're Your One Stop <br/> Destination for That !</div>
+                        <!-- LAYER NR. 17 -->
+                        <a class="tp-caption rev-btn  tp-resizeme" href="#" target="_blank" id="slide-69-layer-8" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['80','50','20','5']" data-width="250" data-height="none" data-whitespace="nowrap" data-type="button" data-actions='' data-responsive_offset="on" data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:0.9;sY:0.9;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;fb:20px;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;fb:0;","style":"c:rgba(255,255,255,1);bs:solid;bw:0 0 0 0;"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[50,50,50,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[50,50,50,0]" style="cursor:pointer;text-decoration: none;z-index:19;line-height:45px;"><span class="impl_btn">GET STARTED </span></a>
+                    </li>
+
                 </ul>
             </div>
         </div>
     </div>
-    <!------ Search Box Start ------>
+    <!------ Search Box Start -----
     <div class="impl_searchbox_wrapper">
         <div class="container">
             <div class="row">
@@ -436,7 +569,7 @@ Purchase: http://themeforest.net/user/kamleshyadav
             <div class="row">
                 <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
                     <div class="impl_welcome_img">
-                        <img src="http://via.placeholder.com/650x317" alt="Welcome" class="img-responsive">
+                        <img src="{{ asset('src/pedro/toyota.png') }}" alt="Welcome" class="img-responsive">
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
@@ -479,72 +612,10 @@ Purchase: http://themeforest.net/user/kamleshyadav
             </div>
         </div>
     </div>
-    <!------ Service and Video Wrapper Start ------>
-    <div class="impl_service_wrapper">
-        <div class="impl_service_car">
-            <img src="http://via.placeholder.com/346x503/fff" alt="" />
-        </div>
-        <div class="impl_service_video">
-            <div class="impl_video_inner">
-                <div class="impl_servdo_video">
-                    <span class="impl_play_icon"><a class="impl-popup-youtube" href="https://www.youtube.com/watch?v=BqjuObIH1nY"><i class="fa fa-play" aria-hidden="true"></i></a></span>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 col-md-12">
-                    <div class="impl_service_left">
-                        <div class="impl_service_details">
-                            <div class="impl_heading">
-                                <h1>service</h1>
-                            </div>
-                            <div class="impl_timeline_wrapper">
-                                <ul class="impl_timeline">
-                                    <li>
-                                        <div class="impl_tl_item">
-                                            <h2>Purchase</h2>
-                                            <p>Vivamus malesuada orci a sapien rutrum, ut iaculis turpis posuere. Proin mollis sodales.</p>
-                                            <span class="impl_tl_icon">
-											<i class="fa fa-shopping-basket" aria-hidden="true"></i>
-										</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="impl_tl_item impl_tl_item_rt">
-                                            <h2>sell</h2>
-                                            <p>Vivamus malesuada orci a sapien rutrum, ut iaculis turpis posuere. Proin mollis sodales.</p>
-                                            <span class="impl_tl_icon">
-											<i class="fa fa-usd" aria-hidden="true"></i>
-										</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="impl_tl_item">
-                                            <h2>repair</h2>
-                                            <p>Vivamus malesuada orci a sapien rutrum, ut iaculis turpis posuere. Proin mollis sodales.</p>
-                                            <span class="impl_tl_icon">
-											<i class="fa fa-wrench" aria-hidden="true"></i>
-										</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!------ Featured Cars Start ------>
     <div class="impl_featured_wrappar">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <div class="impl_heading">
-                        <h1>Featured Cars</h1>
-                    </div>
-                </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="impl_fea_car_box">
                         <div class="impl_fea_car_img">
@@ -616,96 +687,65 @@ Purchase: http://themeforest.net/user/kamleshyadav
                         </div>
                     </div>
                 </div>
-                <!--4-->
-                <div class="col-lg-4 col-md-6">
-                    <div class="impl_fea_car_box">
-                        <div class="impl_fea_car_img">
-                            <img src="http://via.placeholder.com/370x320" alt="" class="img-fluid impl_frst_car_img" />
-                            <img src="http://via.placeholder.com/370x320/fff" alt="" class="img-fluid impl_hover_car_img" />
-                            <span class="impl_img_tag" title="compare"><i class="fa fa-exchange" aria-hidden="true"></i></span>
-                        </div>
-                        <div class="impl_fea_car_data">
-                            <h2><a href="purchase_used.html">Mirage</a></h2>
-                            <ul>
-                                <li><span class="impl_fea_title">model</span>
-                                    <span class="impl_fea_name">Mirage</span></li>
-                                <li><span class="impl_fea_title">Vehicle Status</span>
-                                    <span class="impl_fea_name">old</span></li>
-                                <li><span class="impl_fea_title">year</span>
-                                    <span class="impl_fea_name">2016</span></li>
-                                <li><span class="impl_fea_title">Color</span>
-                                    <span class="impl_fea_name">white</span></li>
-                            </ul>
-                            <div class="impl_fea_btn">
-                                <button class="impl_btn"><span class="impl_doller">$ 72000 </span><span class="impl_bnw">buy now</span></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--5-->
-                <div class="col-lg-4 col-md-6">
-                    <div class="impl_fea_car_box">
-                        <div class="impl_fea_car_img">
-                            <img src="http://via.placeholder.com/370x320" alt="" class="img-fluid impl_frst_car_img" />
-                            <img src="http://via.placeholder.com/370x320/fff" alt="" class="img-fluid impl_hover_car_img" />
-                            <span class="impl_img_tag" title="compare"><i class="fa fa-exchange" aria-hidden="true"></i></span>
-                        </div>
-                        <div class="impl_fea_car_data">
-                            <h2><a href="purchase_used.html"> Realm</a></h2>
-                            <ul>
-                                <li><span class="impl_fea_title">model</span>
-                                    <span class="impl_fea_name">Realm 16.6</span></li>
-                                <li><span class="impl_fea_title">Vehicle Status</span>
-                                    <span class="impl_fea_name">old</span></li>
-                                <li><span class="impl_fea_title">year</span>
-                                    <span class="impl_fea_name">2015</span></li>
-                                <li><span class="impl_fea_title">Color</span>
-                                    <span class="impl_fea_name">black</span></li>
-                            </ul>
-                            <div class="impl_fea_btn">
-                                <button class="impl_btn"><span class="impl_doller">$ 72000 </span><span class="impl_bnw">buy now</span></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--6-->
-                <div class="col-lg-4 col-md-6">
-                    <div class="impl_fea_car_box">
-                        <div class="impl_fea_car_img">
-                            <img src="http://via.placeholder.com/370x320" alt="" class="img-fluid impl_frst_car_img" />
-                            <img src="http://via.placeholder.com/370x320/fff" alt="" class="img-fluid impl_hover_car_img" />
-                            <span class="impl_img_tag" title="compare"><i class="fa fa-exchange" aria-hidden="true"></i></span>
-                        </div>
-                        <div class="impl_fea_car_data">
-                            <h2><a href="purchase_used.html"> Empire</a></h2>
-                            <ul>
-                                <li><span class="impl_fea_title">model</span>
-                                    <span class="impl_fea_name">Empire Z06</span></li>
-                                <li><span class="impl_fea_title">Vehicle Status</span>
-                                    <span class="impl_fea_name">old</span></li>
-                                <li><span class="impl_fea_title">year</span>
-                                    <span class="impl_fea_name">2015</span></li>
-                                <li><span class="impl_fea_title">Color</span>
-                                    <span class="impl_fea_name">yellow</span></li>
-                            </ul>
-                            <div class="impl_fea_btn">
-                                <button class="impl_btn"><span class="impl_doller">$ 72000 </span><span class="impl_bnw">buy now</span></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
     <!------ Need Help Section Start ------>
     <div class="impl_help_wrapper">
+      
+    </div>
+    <!------ Service and Video Wrapper Start ------>
+    <div class="impl_service_wrapper">
+        <div class="impl_service_car">
+            <img src="http://via.placeholder.com/346x503/fff" alt="" />
+        </div>
+        <div class="impl_service_video">
+            <div class="impl_video_inner">
+                <div class="impl_servdo_video">
+                    <span class="impl_play_icon"><a class="impl-popup-youtube" href="https://www.youtube.com/watch?v=BqjuObIH1nY"><i class="fa fa-play" aria-hidden="true"></i></a></span>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 col-md-12 offset-lg-1">
-                    <div class="impl_help_data">
-                        <h1>Need Help Finding Perfect Car ?</h1>
-                        <p>Call Us Now</p>
-                        <div class="impl_help_no"><span>(+1)202-202-012</span></div>
+                <div class="col-lg-7 col-md-12">
+                    <div class="impl_service_left">
+                        <div class="impl_service_details">
+                            <div class="impl_heading">
+                                <h1>service</h1>
+                            </div>
+                            <div class="impl_timeline_wrapper">
+                                <ul class="impl_timeline">
+                                    <li>
+                                        <div class="impl_tl_item">
+                                            <h2>Purchase</h2>
+                                            <p>Vivamus malesuada orci a sapien rutrum, ut iaculis turpis posuere. Proin mollis sodales.</p>
+                                            <span class="impl_tl_icon">
+                      <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                    </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="impl_tl_item impl_tl_item_rt">
+                                            <h2>sell</h2>
+                                            <p>Vivamus malesuada orci a sapien rutrum, ut iaculis turpis posuere. Proin mollis sodales.</p>
+                                            <span class="impl_tl_icon">
+                      <i class="fa fa-usd" aria-hidden="true"></i>
+                    </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="impl_tl_item">
+                                            <h2>repair</h2>
+                                            <p>Vivamus malesuada orci a sapien rutrum, ut iaculis turpis posuere. Proin mollis sodales.</p>
+                                            <span class="impl_tl_icon">
+                      <i class="fa fa-wrench" aria-hidden="true"></i>
+                    </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -875,8 +915,8 @@ Purchase: http://themeforest.net/user/kamleshyadav
             </div>
         </div>
     </div>
-	<!---- Go To Top---->
-	<span class="gotop"><img src="{{ asset('src/impelcarhtml-101/images/goto.png') }}" alt=""></span>
+  	<!---- Go To Top---->
+  	<span class="gotop"><img src="{{ asset('src/impelcarhtml-101/images/goto.png') }}" alt=""></span>
     <!--Main js file Style-->
     <script type="text/javascript" src="{{ asset('src/impelcarhtml-101/js/jquery.js') }}"></script>
     <script type="text/javascript" src="{{ asset('src/impelcarhtml-101/js/popper.js') }}"></script>
@@ -897,6 +937,8 @@ Purchase: http://themeforest.net/user/kamleshyadav
     <script type="text/javascript" src="{{ asset('src/impelcarhtml-101/js/plugin/revolution/js/revolution.addon.slicey.min.js') }}"></script>
     <!----------Revolution slider start---------->
     <script type="text/javascript" src="{{ asset('src/impelcarhtml-101/js/custom.js') }}"></script>
+    <!----------Charge menu start---------->
+    <script type="text/javascript" src="{{ asset('src/maracucho/js/custom.js') }}"></script>
     <!--Main js file End-->
 </body>
 

@@ -127,7 +127,7 @@ button:focus {
 .form-control:focus {
     outline: none;
     box-shadow: none;
-    border-bottom: 1px solid #f15b5b;
+    border-bottom: 1px solid #ff5500;
 }
 .impl_padderleft {
     padding-left: 0px;
@@ -386,8 +386,8 @@ button:focus {
     left: 0;
     right: 0;
     z-index: -1;
-    background-color: #f15b5b;
-    border: 1px solid #f15b5b;
+    background-color: #ff5500;
+    border: 1px solid #ff5500;
     -webkit-transform: skewX(-26deg);
     -moz-transform: skewX(-26deg);
     -o-transform: skewX(-26deg);
@@ -409,22 +409,75 @@ button:focus {
     transition: all 0.3s;
 }
 /*----Header Css Start----*/
-
-.impl_header_wrapper {
+.curve_svg{
     position: relative;
+    margin: 0;
+    padding: 0;
+    background: url('../../pedro/Header BG Tiny.jpg');
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 80vh;
+}
+#curve{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+#curve path{
+    fill: white;
+    fill-opacity: 1;
+}
+.menu-left{
+    position: absolute;
+    top: 100px;
+}
+.loading {
+	display: inline-block;
+}
+.nav-link {
+	display: inline-block;
+}
+.nav-link .loading.hide{
+	visibility: hidden;
+}
+.loading-bar {
+  display: inline-block;
+  width: 0.4em;
+  height: 0.4em;
+  border-radius: 50%;
+  border-color: transparent;
+  animation: loading 1s ease-in-out infinite;
+}
+.loading-bar:nth-child(1) {
+  background-color: #fe5403;
+  animation-delay: 0;
+}
+.loading-bar:nth-child(2) {
+  background-color: #fe5403;
+  animation-delay: 0.09s;
+}
+.loading-bar:nth-child(3) {
+  background-color: #fe5403;
+  animation-delay: .18s;
+}
+@keyframes loading {
+	0% {
+		transform: scale(1);
+	}
+	20% {
+		transform: scale(1, 2.2);
+	}
+	40% {
+		transform: scale(1);
+	}
 }
 .impl_logo {
-    float: left;
-    width: auto;
-    height: 122px;
-    background-color: #151515;
-    padding: 0px 176px 0px 80px;
     position: absolute;
-    left: 0;
-    top: 0;
-    line-height: 120px;
-    -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0%, 81% 100%, 0% 100%);
+    top: 100px;
+    display: block;
+    margin-left: 40%;
+    margin-right: 40%;
 }
 .impl_logo img {
     display: inline-block;
@@ -432,13 +485,51 @@ button:focus {
 .impl_logo_responsive {
     display: none;
 }
-.impl_top_header {
-    width: auto;
-    padding: 18px 0px;
-    background-color: #151515;
-}
 .impl_top_info {
-    float: right;
+    position: absolute;
+    top: 100px;
+    right: 3%;
+}
+
+.search-panel{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15%;
+}
+
+.cat-carousel{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-input{
+	display: inline-block;
+	width: 90%;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid white;
+	outline: none;
+	color: white;
+	text-align: center;
+	font-size: 1.7em;
+}
+.main-input:focus {
+	background: transparent;
+	color: white;
+	box-shadow: none;
+}
+#menu-slider .carousel-item {
+	left: 10%;
+	width: 80%;
+}
+#menu-slider .carousel-item ul {
+	height: 48px;
+}
+
+#menu-slider a:hover{
+	color: #fe5403;
 }
 ul.impl_header_social {
     float: left;
@@ -461,7 +552,7 @@ ul.impl_header_social li a {
     font-size: 16px;
 }
 ul.impl_header_social li a:hover {
-    color: #f15b5b;
+    color: #ff5500;
 }
 .impl_header_time {
     float: left;
@@ -516,7 +607,7 @@ ul.impl_header_icons li span {
     cursor: pointer;
 }
 ul.impl_header_icons li span:hover {
-    color: #f15b5b;
+    color: #ff5500;
 }
 ul.impl_header_icons li a {
     width: auto;
@@ -524,11 +615,11 @@ ul.impl_header_icons li a {
     font-size: 16px;
 }
 ul.impl_header_icons li > a:hover {
-    color: #f15b5b;
+    color: #ff5500;
 }
 .impl_menu_wrapper {
     width: 100%;
-    background-color: #f15b5b;
+    background-color: #ff5500;
 }
 .impl_menu_wrapper:after {
     position: absolute;
@@ -683,7 +774,7 @@ ul.impl_header_icons li > a:hover {
     width: 100%;
 }
 .cart-box .content .title:hover {
-    color: #f15b5b;
+    color: #ff5500;
 }
 .cart-box .content .quantity {
     font-size: 12px;
@@ -694,7 +785,7 @@ ul.impl_header_icons li > a:hover {
 .cart-box .content .price {
     font-size: 17px;
     line-height: 17px;
-    color: #f15b5b;
+    color: #ff5500;
     font-weight: 700;
 }
 .cart-box .button-x {
@@ -702,7 +793,7 @@ ul.impl_header_icons li > a:hover {
     top: 15px;
     right: 0;
     cursor: pointer;
-    color: #f15b5b;
+    color: #ff5500;
 }
 .cart-box .summary {
     width: 100%;
@@ -817,7 +908,7 @@ ul.impl_header_icons li > a:hover {
 .bar3 {
     width: 30px;
     height: 2px;
-    background-color: #f15b5b;
+    background-color: #ff5500;
     margin: 5px 0;
     border-radius: 10px;
     -webkit-transition: all .5s;
@@ -849,7 +940,7 @@ ul.impl_header_icons li > a:hover {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #f15b5b;
+    background-color: #ff5500;
     width: 100%;
     text-align: center;
     padding: 42px 0px;
@@ -1066,12 +1157,12 @@ span.srch_close_btn_icon {
 }
 /*----Mouse Wheel Css Start----*/
 
-.impl_ex_btn a {
+.impl_ex_btn a {10
     font-size: 18px;
     font-weight: 600;
 }
 .impl_ex_btn a:hover {
-    color: #f15b5b;
+    color: #ff5500;
 }
 .mouse-wrap {
     top: 0;
@@ -1188,7 +1279,7 @@ p.slogan strong {
 }
 .impl_search_box {
     padding: 30px 41px 0px 30px;
-    background-color: #f15b5b;
+    background-color: #ff5500;
 }
 .impl_search_box .nice-select {
     border-radius: 0;
@@ -1304,7 +1395,7 @@ p.slogan strong {
 /*----Welcome Wrapper Css Start----*/
 
 .impl_welcome_wrapper {
-    /* background-color: #fff; */
+    background-color: #fff;
     backface-visibility: hidden;
     margin-top: -10px;
     padding-bottom: 100px;
@@ -1319,7 +1410,8 @@ p.slogan strong {
     display: inline-block;
 }
 .impl_welcome_text h1 {
-    margin: 0px;
+    color: #5d5d5d;
+    margin-top: 40px;
     margin-bottom: 50px;
     text-transform: uppercase;
     font-size: 32px;
@@ -1352,12 +1444,12 @@ p.slogan strong {
 }
 .impl_welcome_text .panel-title a:hover,
 .impl_welcome_text .panel-title a:focus {
-    color: #f15b5b;
+    color: #ff5500;
 }
 .impl_welcome_text .panel-heading .accordion-toggle:after {
     font-family: FontAwesome;
     content: "\f107";
-    background-color: #f15b5b;
+    background-color: #ff5500;
     color: #ffffff;
     position: absolute;
     left: 0;
@@ -1385,11 +1477,11 @@ p.slogan strong {
 }
 .impl_welcome_text .panel-default>.panel-heading+.panel-collapse>.panel-body {
     border-top-color: transparent;
-    background-color: #f15b5a;
+    background-color: #ff5500;
     color: #ffffff;
     padding: 20px;
     backface-visibility: hidden;
-    border-top: 5px solid #0a0a0a;
+    border-top: 5px solid #fff;
 }
 /*----Service Css Start----*/
 
@@ -1442,7 +1534,7 @@ p.slogan strong {
     border-radius: 100%;
     position: absolute;
     top: 0;
-    background-color: #f15b5b;
+    background-color: #ff5500;
     z-index: 1;
     right: -18px;
 }
@@ -1552,8 +1644,8 @@ p.slogan strong {
 /*----Featured Car Css Start----*/
 
 .impl_featured_wrappar {
-    padding: 100px 0px 50px;
-    background-color: #0a0a0a;
+    background-color: #fff;
+    padding: 0px 0px 50px;
 }
 .impl_fea_car_box {
     margin-bottom: 30px;
@@ -1580,7 +1672,7 @@ p.slogan strong {
     position: absolute;
     width: 35px;
     height: 35px;
-    background-color: #f15b5b;
+    background-color: #ff5500;
     text-align: center;
     line-height: 35px;
     top: 20px;
@@ -1613,10 +1705,10 @@ p.slogan strong {
     text-align: center;
 }
 .impl_fea_car_data h2 a {
-    color: #ffffff;
+    color: #5d5d5d;
 }
 .impl_fea_car_data h2 a:hover {
-    color: #f15b5b;
+    color: #ff5500;
 }
 .impl_fea_car_data ul {
     padding: 0px;
@@ -1636,7 +1728,7 @@ p.slogan strong {
     position: absolute;
     left: 50%;
     top: 50%;
-    background-color: #ffffff;
+    background-color: #5d5d5d;
     width: 5px;
     height: 2px;
     content: "";
@@ -1647,12 +1739,14 @@ p.slogan strong {
     -o-transform: translate(-50%, -50%);
 }
 .impl_fea_car_data ul li span.impl_fea_title {
+    color: #5d5d5d;
     width: 50%;
     text-align: left;
     text-transform: capitalize;
     display: inline-block;
 }
 .impl_fea_car_data ul li span.impl_fea_name {
+    color: #5d5d5d;
     width: 50%;
     float: right;
     text-align: left;
@@ -1707,11 +1801,10 @@ p.slogan strong {
 /*----Help Css Start----*/
 
 .impl_help_wrapper {
-    background-image: url(http://via.placeholder.com/1920x300);
+    background-image: url('../../pedro/publicidad.jpg');
     background-size: cover;
     position: relative;
-    z-index: 1;
-    padding: 65px 0px 75px;
+    padding: 395px 0px 395px;
 }
 .impl_help_wrapper:before {
     position: absolute;
@@ -1929,7 +2022,7 @@ p.slogan strong {
 .impl_post_data h2 a:hover,
 .impl_pst_admin span a:hover,
 ul.impl_pst_views li a:hover {
-    color: #f15b5b;
+    color: #ff5500;
 }
 .impl_post_data p {
     line-height: 24px;
@@ -1986,7 +2079,7 @@ ul.impl_pst_views li a i {
     width: 50px;
     height: 50px;
     text-align: center;
-    background-color: #f15b5b;
+    background-color: #ff5500;
     padding: 4px 12px;
     text-transform: capitalize;
     z-index: 10000;
@@ -2115,7 +2208,7 @@ h1.impl_foo_title {
     position: relative;
 }
 .impl_foo_box ul li a:hover {
-    color: #f15b5b;
+    color: #ff5500;
 }
 .impl_foo_box ul li a:hover i {
     padding-right: 10px;
@@ -2182,7 +2275,7 @@ h1.impl_foo_title {
     right: 0;
     width: 40px;
     height: 40px;
-    background-color: #f15b5b;
+    background-color: #ff5500;
     border: 1px solid transparent;
     color: #fff;
     font-size: 15px;
@@ -2288,7 +2381,7 @@ p.impl_copyright {
     float: none;
     width: 100%;
     padding: 37px 15px 40px;
-    background-color: #f15b5b;
+    background-color: #ff5500;
     display: inline-block;
 }
 .impl_searchbox_wrapper.impl_home_searchbox .impl_search_box .impl_search_btn {
@@ -2435,7 +2528,7 @@ p.impl_ser_para {
 .impl_service_wrapper.impl_faq_wrapper .impl_welcome_text .panel-title a:after {
     font-family: FontAwesome;
     content: "\f068";
-    background-color: #f15b5b;
+    background-color: #ff5500;
     color: #ffffff;
     position: absolute;
     right: 30px;
@@ -2609,7 +2702,7 @@ p.impl_ser_para {
 }
 .impl_bread_wrapper ol.breadcrumb li.breadcrumb-item a {
     font-size: 16px;
-    color: #f15b5b;
+    color: #ff5500;
 }
 .impl_bread_wrapper .breadcrumb-item + .breadcrumb-item::before {
     padding-right: 0.3rem;
@@ -2684,7 +2777,7 @@ p.impl_ser_para {
     z-index: 1;
 }
 .impl_progress_wrapper .progress .progress-bar {
-    background: #f15b5b;
+    background: #ff5500;
 }
 @-webkit-keyframes animate-positive {
     0% {
@@ -2710,7 +2803,7 @@ p.impl_ser_para {
 .impl_tl_dot {
     width: 19px;
     height: 19px;
-    background-color: #f15b5b;
+    background-color: #ff5500;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -2801,7 +2894,7 @@ p.impl_ser_para {
 }
 .impl_test_data {
     width: 85%;
-    background-color: #f15b5b;
+    background-color: #ff5500;
     padding: 70px 30px 30px 170px;
     display: inline-block;
     margin-left: 10%;
@@ -2955,7 +3048,7 @@ p.impl_ser_para {
 }
 .impl_category_type .impl_btn.active:after,
 .impl_category_type .impl_btn:hover:after {
-    background-color: #f15b5b;
+    background-color: #ff5500;
 }
 /*----Sidebar Css Start----*/
 
@@ -2995,10 +3088,10 @@ h2.widget-title {
     margin-top: 45px;
 }
 .impl_product_search.widget.woocommerce .foo_subs_btn:hover {
-    background-color: #f15b5b;
+    background-color: #ff5500;
 }
 .impl_product_search.widget.woocommerce .foo_subs_btn:before {
-    border-bottom: 39px solid #f15b5b;
+    border-bottom: 39px solid #ff5500;
 }
 .impl_product_brand.widget.woocommerce ul li,
 .impl_product_color.widget.woocommerce ul li {
@@ -3024,7 +3117,7 @@ h2.widget-title {
 }
 .impl_product_brand ul li label:hover,
 .impl_product_color ul li label:hover {
-    color: #f15b5b;
+    color: #ff5500;
 }
 .impl_product_brand ul li label input[type="checkbox"],
 .impl_product_color ul li label input[type="checkbox"] {
@@ -3067,7 +3160,7 @@ h2.widget-title {
     font-size: 10px;
     left: 0;
     top: 0px;
-    background-color: #f15b5b;
+    background-color: #ff5500;
 }
 @-webkit-keyframes tick {
     0% {
@@ -3217,11 +3310,11 @@ h2.widget-title {
 }
 .impl_product_type.widget.woocommerce li a:hover,
 .widget.widget_categories li a:hover {
-    color: #f15b5b;
+    color: #ff5500;
 }
 .impl_product_type.widget.woocommerce li a:hover:before,
 .widget.widget_categories li a:hover:before {
-    background-color: #f15b5b;
+    background-color: #ff5500;
 }
 /*--Recent Post Css--*/
 
@@ -3257,7 +3350,7 @@ h2.widget-title {
     display: inline-block;
 }
 .widget.widget_recent_entries ul li .recent_cmnt_data h4 a:hover {
-    color: #f15b5b;
+    color: #ff5500;
 }
 .widget.widget_recent_entries ul li:last-child {
     margin-bottom: 0px;
@@ -3300,7 +3393,7 @@ h2.widget-title {
     font-weight: 600;
 }
 .widget.widget_tag_cloud ul li a:hover {
-    background-color: #f15b5b;
+    background-color: #ff5500;
     color: #ffffff;
 }
 /*--Instagram Feeds--*/
@@ -3508,7 +3601,7 @@ h2.widget-title {
     margin-left: 10px;
 }
 .impl_query_form .form-control:focus {
-    border-color: #f15b5b;
+    border-color: #ff5500;
 }
 /*----Blog Page Css Start----*/
 
@@ -3610,7 +3703,7 @@ h3.comments-title {
     margin-right: 30px;
 }
 .comment_data_info h3 a:hover {
-    color: #f15b5b;
+    color: #ff5500;
 }
 .comment-reply {
     float: right;
@@ -3619,7 +3712,7 @@ h3.comments-title {
     line-height: 30px;
     text-align: center;
     display: inline-block;
-    background-color: #f15b5b;
+    background-color: #ff5500;
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
@@ -3772,19 +3865,19 @@ h3.comment-reply-title {
 }
 .impl_con_form .form-control:focus,
 .impl_con_form textarea.form-control:focus {
-    border-bottom: 1px solid #f15b5b;
+    border-bottom: 1px solid #ff5500;
 }
 .impl_con_form .impl_btn {
     margin-top: 20px;
     min-width: 170px;
 }
 .impl_con_form .impl_btn:hover {
-    color: #f15b5b;
+    color: #ff5500;
     background-color: transparent;
     border: none;
 }
 .impl_con_form .impl_btn:after {
-    border: 1px solid #f15b5b;
+    border: 1px solid #ff5500;
 }
 .contact_map {
     position: absolute;
@@ -3810,8 +3903,8 @@ h3.comment-reply-title {
     position: relative;
     z-index: 1;
     width: 295px;
-    background-color: #f15b5b;
-    border: 2px solid #f15b5b;
+    background-color: #ff5500;
+    border: 2px solid #ff5500;
     -webkit-transform: skewX(-15deg);
     -moz-transform: skewX(-15deg);
     -o-transform: skewX(-15deg);
@@ -3854,7 +3947,7 @@ h3.comment-reply-title {
     background-color: #0a0a0a;
 }
 .impl_con_data p a:hover {
-    color: #f15b5b;
+    color: #ff5500;
 }
 .response {
     color: #ff0000;
@@ -3911,7 +4004,7 @@ h3.comment-reply-title {
     font-weight: 700;
     width: 100px;
     height: 80px;
-    background-color: #f15b5b;
+    background-color: #ff5500;
     line-height: 80px;
     float: left;
     opacity: 0.4;
@@ -3945,7 +4038,7 @@ h3.comment-reply-title {
     left: -180px;
     top: 50%;
     z-index: -1;
-    border: dashed 1px #f15b5b;
+    border: dashed 1px #ff5500;
 }
 #step_progressbar li:first-child:after,#impl_sform .steps ul li:first-child:after {
     content: none;
@@ -3962,7 +4055,7 @@ h3.comment-reply-title {
 	display:none;
 }
 #impl_sform .content{
-	background:transparent;	
+	background:transparent;
 	min-height: inherit;
 }
 #impl_sform .content > .body ul > li{
@@ -4122,7 +4215,7 @@ ul.step_car_img li.step_imgs:hover .step_car_select {
     width: 25px;
     height: 25px;
     cursor: pointer;
-    background-color: #f15b5b;
+    background-color: #ff5500;
     line-height: 22px;
     border-radius: 100%;
     transform: translate(-50%, -50%);
@@ -4266,7 +4359,7 @@ ul.step_car_img li:hover .step_view_img_over {
     padding-left: 40px;
 }
 .car_emi_wrapper > a:hover {
-    color: #f15b5b;
+    color: #ff5500;
 }
 .car_emi_wrapper > a i.fa {
     padding-right: 7px;
@@ -4491,7 +4584,7 @@ ul.impl_car_prts li .impl_cr_no {
     background-color: #ffffff;
     color: #000;
     border-radius: 100%;
-    border: 3px solid #f15b5b;
+    border: 3px solid #ff5500;
     cursor: pointer;
 }
 .impl_cr_prts_des {
@@ -4616,7 +4709,7 @@ h2.impl_cmpr_title {
     height: 20px;
     display: inline-block;
     line-height: 19px;
-    background-color: #f15b5b;
+    background-color: #ff5500;
     border-radius: 100%;
     cursor: pointer;
 }
@@ -4681,7 +4774,7 @@ label.compare_check_label {
     transition: all 0.3s ease-in-out;
 }
 .compare_list_option label:hover {
-    color: #f15b5b;
+    color: #ff5500;
 }
 .compare_list_option label input[type="checkbox"] {
     display: none;
@@ -4736,7 +4829,7 @@ label.compare_check_label {
     display: inline-table;
 }
 .compare_table table thead {
-    background-color: #f15b5b;
+    background-color: #ff5500;
 }
 .compare_table table.table-bordered thead th,
 .compare_table table.table-bordered thead td {
@@ -4780,7 +4873,7 @@ label.compare_check_label {
 }
 .impl_checkout_wrapper #step_progressbar li.active {
     opacity: 1;
-    background-color: #f15b5b;
+    background-color: #ff5500;
 }
 .impl_checkout_wrapper #step_progressbar li span {
     display: inline-block;
@@ -5039,7 +5132,7 @@ label.compare_check_label {
 }
 .impl_signin .close:focus,
 .impl_signin .close:hover {
-    color: #f15b5b;
+    color: #ff5500;
     opacity: 1;
 }
 .impl_sign_img:after {
@@ -5125,7 +5218,7 @@ label.compare_check_label {
     font-weight: 500;
 }
 .impl_sign_form .form-control:focus {
-    border-bottom: 1px solid #f15b5b;
+    border-bottom: 1px solid #ff5500;
 }
 .impl_sign_form .cy_button {
     margin-bottom: 20px;
@@ -5160,7 +5253,7 @@ label.compare_check_label {
 }
 .impl_sign_form .forget_password a:hover,
 .impl_sign_form p a:hover {
-    color: #f15b5b;
+    color: #ff5500;
 }
 .impl_sign_form p a {
     color: #5d5d5d;
@@ -5259,7 +5352,7 @@ label.compare_check_label {
     height: 165px;
     display: inline-block;
     line-height: 132px;
-    color: #f15b5b;
+    color: #ff5500;
     vertical-align: middle;
 }
 .error_text span.err_2 {
@@ -5272,7 +5365,7 @@ label.compare_check_label {
     height: 170px;
     left: 0;
     top: 0;
-    background-color: #f15b5b;
+    background-color: #ff5500;
     transform: skew(12deg);
     -webkit-transform: skew(12deg);
     -moz-transform: skew(12deg);
@@ -5285,7 +5378,7 @@ label.compare_check_label {
     height: 170px;
     right: 0;
     top: 0;
-    background-color: #f15b5b;
+    background-color: #ff5500;
     transform: skew(12deg);
     -webkit-transform: skew(12deg);
     -moz-transform: skew(12deg);
@@ -5305,7 +5398,7 @@ label.compare_check_label {
     border: 1px solid #fff;
 }
 .error_text .impl_btn {
-    color: #f15b5b;
+    color: #ff5500;
 }
 /*----Go to top css----*/
 .gotop {
@@ -5583,7 +5676,7 @@ label.compare_check_label {
         border: none;
     }
     .impl_menu ul > li ul.sub-menu li a:hover {
-        color: #f15b5b;
+        color: #ff5500;
     }
     .impl_menu_wrapper ul li:last-child {
         padding-right: 0px;
@@ -5625,7 +5718,7 @@ label.compare_check_label {
         background-color: #fff;
         top: 100%;
         left: 0;
-        border-bottom: 3px solid #f15b5b;
+        border-bottom: 3px solid #ff5500;
         opacity: 0;
         visibility: hidden;
         transform: translateY(2em);
@@ -5665,7 +5758,7 @@ label.compare_check_label {
         border-bottom: none;
     }
     .impl_menu_wrapper ul li ul.sub-menu li a:hover {
-        color: #f15b5b;
+        color: #ff5500;
     }
     .impl_menu_wrapper ul li ul.sub-menu li ul.sub-menu {
         left: 100%;
@@ -6078,7 +6171,7 @@ label.compare_check_label {
         height: 100%;
         left: -100%;
         background-image: url(../images/service/service_bg1.jpg);
-        background-color: #f15b5b;
+        background-color: #ff5500;
         background-size: cover;
         z-index: 1000;
         overflow-y: scroll;
@@ -6628,7 +6721,7 @@ label.compare_check_label {
     .impl_signin::-webkit-scrollbar-thumb {
         background-color: #f15b5a;
         outline: 2px solid #f15b5a;
-    }		
+    }
 
 }
 @media (max-width: 667px) and (orientation: landscape) {
@@ -7056,7 +7149,7 @@ label.compare_check_label {
 	transform:skew(-40deg);
 	-webkit-transform:skew(-40deg);
 	-moz-transform:skew(-40deg);
-	-ms-transform:skew(-40deg);	
+	-ms-transform:skew(-40deg);
 }
 .impl_header_wrapper.impl_home_wrapper .impl_logo:after{
 	display:none;
