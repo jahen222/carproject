@@ -11,8 +11,7 @@
 |
 */
 
-Route::get('/', 'IndexController@index');
-Route::get('/home', 'IndexController@home');
+Route::get('/home', 'IndexController@index');
 
 Auth::routes();
 
@@ -153,3 +152,8 @@ Route::get('/termsAndConditions', function () {
  * Newsletter subscribe
  */
 Route::post('/subscribe', 'SubscribeController@store');
+
+/**
+ * Store
+ */
+Route::get('/store', 'StoreController@index');

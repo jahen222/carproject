@@ -17,6 +17,10 @@ class IndexController extends Controller
 
     public function home(){
 
-        return view('home');
+        $categories = \App\Category::all();
+        $products = \App\Product::orderBy('average_rating', 'desc')->get();
+        $recommendedProducts = $products->take(3);
+
+        return view('home', compact('categories', 'recommendedProducts'));
     }
 }

@@ -14,7 +14,7 @@ Purchase: http://themeforest.net/user/kamleshyadav
 <!-- Begin Head -->
 
 <head>
-    <title>Impel Car Dealer Responsive HTML Template</title>
+    <title>Carprojects</title>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="description" content="Impel">
@@ -35,13 +35,243 @@ Purchase: http://themeforest.net/user/kamleshyadav
     <link rel="stylesheet" type="text/css" href="{{ asset('src/impelcarhtml-101/js/plugin/revolution/css/settings.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('src/impelcarhtml-101/css/style.css') }}">
     <!-- Favicon Link -->
-    <link rel="shortcut icon" type="image/png" href="{{ asset('src/impelcarhtml-101/images/favicon.png') }}">
+    <link rel="shortcut icon" type="image/png" href="{{ asset('src/maracucho/img/logo_favicon.png') }}">
 </head>
 
 <body>
-    <!------ Header Start ------>
+    <!------ Header Start mobile------>
+    <div class="impl_header_wrapper d-xl-none d-lg-none d-md-none">
+        <div class="impl_logo">
+            <a href="index.html"><img src="images/logo.png" alt="Logo" class="img-fluid"></a>
+        </div>
+        <div class="impl_top_header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="impl_top_info">
+                            <ul class="impl_header_social">
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            </ul>
+                            <p class="impl_header_time"><i class="fa fa-clock-o" aria-hidden="true"></i> Working Hours - 6 AM To 8 PM <span>sunday closed</span></p>
+                            <ul class="impl_header_icons">
+                                <li class="impl_search"><span><i class="fa fa-search" aria-hidden="true"></i></span></li>
+                                <li><a href="compare.html"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+                                <li class="cart-popup"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                    <!--shopping cart box-->
+                                    <div class="cart-box">
+                                        <div class="popup-container">
+                                            <div class="cart-entry">
+                                                <a href="#" class="image">
+                        <img src="http://via.placeholder.com/70x60" alt="">
+                      </a>
+                                                <div class="content">
+                                                    <a href="#" class="title">Serpent</a>
+                                                    <p class="quantity">Quantity: 1</p>
+                                                    <span class="price">$4500.00</span>
+                                                </div>
+                                                <div class="button-x">
+                                                    <i class="fa fa-times-circle" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                            <div class="cart-entry">
+                                                <a href="#" class="image">
+                        <img src="http://via.placeholder.com/70x60" alt="">
+                      </a>
+                                                <div class="content">
+                                                    <a href="#" class="title">Empire</a>
+                                                    <p class="quantity">Quantity: 1</p>
+                                                    <span class="price">$900.00</span>
+                                                </div>
+                                                <div class="button-x">
+                                                    <i class="fa fa-times-circle" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                            <div class="summary">
+                                                <div class="subtotal">Sub Total</div>
+                                                <div class="price-s">$5100.0</div>
+                                            </div>
+                                            <div class="cart-buttons">
+                                                <a href="checkout.html" class="btn impl_btn">View Cart</a>
+                                                <a href="checkout.html" class="btn impl_btn">Checkout</a>
+                                                <div class="clear"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#signin" data-toggle="modal"><i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+                            </ul>
+                            <div class="impl_search_overlay">
+                                <div class="impl_search_area">
+                                    <div class="srch_inner">
+                                        <form action="#">
+                                            <input type="text" placeholder="Search here... ">
+                                            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                        </form>
+                                        <div class="srch_close_btn">
+                                            <span class="srch_close_btn_icon"><i class="fa fa-times" aria-hidden="true"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--sign-in form-->
+        <div class="modal" id="signin">
+            <div class="impl_signin">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">×</span>
+      </button>
+                <div class="impl_sign_form">
+                    <h1>Sign In</h1>
+                    <div class="form-group">
+                        <input type="text" placeholder="Email" class="form-control">
+                        <span class="form_icon">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </span>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" class="form-control">
+                        <span class="form_icon">
+          <i class="fa fa-lock" aria-hidden="true"></i>
+          </span>
+                    </div>
+                    <div class="forget_password">
+                        <div class="remember_checkbox">
+                            <label>Keep me signed in
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+                        </div>
+                        <a href="#">Forgot Password ?</a>
+                    </div>
+                    <a href="#" class="impl_btn">submit</a>
+                    <p>Dont Have An Account? <a class="impl_modal" href="#signup" data-toggle="modal">Sign Up</a></p>
+                </div>
+                <div class="impl_sign_img">
+                    <h2>Welcome To Impel Cars</h2>
+                    <p>A Perfect Zone To Sell And Purchase Cars</p>
+                    <div class="impl_sign_bottom">
+                        <h3>It’s Not Just A Car </h3>
+                        <h3>It’s Someone’s Dream</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--sign-up form-->
+        <div class="modal" id="signup">
+            <div class="impl_signin">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">×</span>
+      </button>
+                <div class="impl_sign_form">
+                    <h1>Sign up</h1>
+                    <div class="form-group">
+                        <input type="text" placeholder="Username" class="form-control">
+                        <span class="form_icon">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Email" class="form-control">
+                        <span class="form_icon">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </span>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" class="form-control">
+                        <span class="form_icon">
+          <i class="fa fa-lock" aria-hidden="true"></i>
+          </span>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Confirm Password" class="form-control">
+                        <span class="form_icon">
+          <i class="fa fa-lock" aria-hidden="true"></i>
+          </span>
+                    </div>
+                    <a href="#" class="impl_btn">sign up</a>
+                    <p>Dont Have An Account? <a href="#signup" data-toggle="modal" class="impl_modal">Sign Up</a></p>
+                </div>
+                <div class="impl_sign_img">
+                    <h2>Welcome To Impel Cars</h2>
+                    <p>A Perfect Zone To Sell And Purchase Cars</p>
+                    <div class="impl_sign_bottom">
+                        <h3>It’s Not Just A Car </h3>
+                        <h3>It’s Someone’s Dream</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--menu start-->
+        <div class="impl_menu_wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <button class="impl_menu_btn">
+      <i class="fa fa-car" aria-hidden="true"></i>
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </button>
+                        <div class="impl_menu_inner">
+                            <div class="impl_logo_responsive">
+                                <a href="index.html"><img src="images/logo1.png" alt="Logo" class="img-fluid"></a>
+                            </div>
+                            <a href="sell_step.html" class="impl_btn">Sell your car</a>
+                            <div class="impl_menu">
+                                <nav>
+                                    <div class="menu_cross">
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </div>
+                                    <ul>
+                                        <li class="dropdown"><a href="javascript:;" class="active">home</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="index.html">Home version1</a></li>
+                                                <li><a href="home.html">Home version2</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="about.html">Company</a></li>
+                                        <li class="dropdown"><a href="javascript:;">Purchase car</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="purchase_new.html">New car</a></li>
+                                                <li><a href="purchase_used.html">old car</a></li>
+                                                <li><a href="purchase_new_single.html">New Car Single</a></li>
+                                                <li><a href="purchase_old_single.html">old car single</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="service.html">services</a></li>
+                                        <li class="dropdown"><a href="javascript:;">blog</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="blog_left_sidebar.html">blog left sidebar</a></li>
+                                                <li><a href="blog_right_sidebar.html">blog right sidebar</a></li>
+                                                <li><a href="blog_single.html">blog single</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a href="javascript:;">pages</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="sell_step.html">Sell page</a></li>
+                                                <li><a href="compare.html">compare page</a></li>
+                                                <li><a href="checkout.html">checkout page</a></li>
+                                                <li><a href="error.html">404 page</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Contact us</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <section class="curve_svg">
+    <!------ Header Start Desktop------>
+    <section class="curve_svg d-none d-md-block">
         <!------ Left menu header ------>
         <div class="col-md-3 justify-content-center float-left menu-left">
             <nav class="nav flex-column" id="menu-lateral">
@@ -256,7 +486,7 @@ Purchase: http://themeforest.net/user/kamleshyadav
                     <p>Dont Have An Account? <a class="impl_modal" href="#signup" data-toggle="modal">Sign Up</a></p>
                 </div>
                 <div class="impl_sign_img">
-                    <h2>Welcome To Impel Cars</h2>
+                    <h2>Welcome To Carprojects</h2>
                     <p>A Perfect Zone To Sell And Purchase Cars</p>
                     <div class="impl_sign_bottom">
                         <h3>It’s Not Just A Car </h3>
@@ -301,7 +531,7 @@ Purchase: http://themeforest.net/user/kamleshyadav
                     <p>Dont Have An Account? <a href="#signup" data-toggle="modal" class="impl_modal">Sign Up</a></p>
                 </div>
                 <div class="impl_sign_img">
-                    <h2>Welcome To Impel Cars</h2>
+                    <h2>Welcome To Carprojects</h2>
                     <p>A Perfect Zone To Sell And Purchase Cars</p>
                     <div class="impl_sign_bottom">
                         <h3>It’s Not Just A Car </h3>
@@ -315,6 +545,56 @@ Purchase: http://themeforest.net/user/kamleshyadav
             <path class="cls-1" d="M0,280.8S283.66,59,608.94,163.56s437.93,150.57,808,10.34V309.54H0V280.8Z" transform="translate(0-135.53)"/>
         </svg>
     </section>
+
+    <!------ Welcome Wrapper Start ------>
+    <div class="impl_welcome_wrapper impl_bottompadder80">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+                    <div class="impl_welcome_img">
+                        <img src="{{ asset('src/pedro/toyota.png') }}" alt="Welcome" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                    <div class="impl_welcome_text">
+                        <h1>Welcome to Carprojects</h1>
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in show">
+                                    <div class="panel-body">
+                                        Vivamus malesuada orci a sapien rutrum, ut iaculis turpis posuere. Proin mollis sodales aliquet. Suspendisse iaculis, justo ac feugiat accumsan, turpis urna consequat mauris.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Vivamus malesuada orci a sapien rutrum, ut iaculis turpis posuere. Proin mollis sodales aliquet. Suspendisse iaculis, justo ac feugiat accumsan, turpis urna consequat mauris.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Vivamus malesuada orci a sapien rutrum, ut iaculis turpis posuere. Proin mollis sodales aliquet. Suspendisse iaculis, justo ac feugiat accumsan, turpis urna consequat mauris.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!------ Slider Start ------>
     <div class="impl_slider_wrapper">
@@ -563,189 +843,85 @@ Purchase: http://themeforest.net/user/kamleshyadav
         </div>
     </div>
 
-    <!------ Welcome Wrapper Start ------>
-    <div class="impl_welcome_wrapper impl_bottompadder80">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
-                    <div class="impl_welcome_img">
-                        <img src="{{ asset('src/pedro/toyota.png') }}" alt="Welcome" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
-                    <div class="impl_welcome_text">
-                        <h1>Welcome to impel cars</h1>
-                        <div class="panel-group" id="accordion">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
-                                </div>
-                                <div id="collapseOne" class="panel-collapse collapse in show">
-                                    <div class="panel-body">
-                                        Vivamus malesuada orci a sapien rutrum, ut iaculis turpis posuere. Proin mollis sodales aliquet. Suspendisse iaculis, justo ac feugiat accumsan, turpis urna consequat mauris.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
-                                </div>
-                                <div id="collapseTwo" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        Vivamus malesuada orci a sapien rutrum, ut iaculis turpis posuere. Proin mollis sodales aliquet. Suspendisse iaculis, justo ac feugiat accumsan, turpis urna consequat mauris.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
-                                </div>
-                                <div id="collapseThree" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        Vivamus malesuada orci a sapien rutrum, ut iaculis turpis posuere. Proin mollis sodales aliquet. Suspendisse iaculis, justo ac feugiat accumsan, turpis urna consequat mauris.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!------ Featured Cars Start ------>
     <div class="impl_featured_wrappar">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="impl_fea_car_box">
-                        <div class="impl_fea_car_img">
-                            <img src="http://via.placeholder.com/370x320" alt="" class="img-fluid impl_frst_car_img" />
-                            <img src="http://via.placeholder.com/370x320/fff" alt="" class="img-fluid impl_hover_car_img" />
-                            <span class="impl_img_tag" title="compare"><i class="fa fa-exchange" aria-hidden="true"></i></span>
-                        </div>
-                        <div class="impl_fea_car_data">
-                            <h2><a href="purchase_new.html">Aurora</a></h2>
-                            <ul>
-                                <li><span class="impl_fea_title">model</span>
-                                    <span class="impl_fea_name">Aurora 811</span></li>
-                                <li><span class="impl_fea_title">Vehicle Status</span>
-                                    <span class="impl_fea_name">new</span></li>
-                                <li><span class="impl_fea_title">Color</span>
-                                    <span class="impl_fea_name">white</span></li>
-                            </ul>
-                            <div class="impl_fea_btn">
-                                <button class="impl_btn"><span class="impl_doller">$ 72000 </span><span class="impl_bnw">buy now</span></button>
+                @foreach($recommendedProducts as $recommendedProduct)
+                    <div class="col-lg-4 col-md-6">
+                        <div class="impl_fea_car_box">
+                            <div class="impl_fea_car_img">
+                                <img src="{{$recommendedProduct->path_to_thumbnail}}" alt="" class="img-fluid impl_frst_car_img" />
+                                <img src="{{$recommendedProduct->path_to_thumbnail}}" alt="" class="img-fluid impl_hover_car_img" />
+                                <span class="impl_img_tag" title="compare"><a href="{{ url('/products/'.$recommendedProduct->id) }}"><i class="fa fa-exchange" aria-hidden="true"></i></a></span>
+                            </div>
+                            <div class="impl_fea_car_data">
+                                <h2><a href="{{ url('/products/'.$recommendedProduct->id) }}">{{$recommendedProduct->name}}</a></h2>
+                                <ul>
+                                    <li><span class="impl_fea_title">Quantity</span>
+                                        <span class="impl_fea_name">{!!$recommendedProduct->quantity!!}</span></li>
+                                    <li><span class="impl_fea_title">Subcategory</span>
+                                        <span class="impl_fea_name">{!!$recommendedProduct->Subcategory->name!!}</span></li>
+                                  </ul>
+                                <div class="impl_fea_btn">
+                                    <button class="impl_btn"><a href="{{ url('/products/'.$recommendedProduct->id) }}"><span class="impl_doller">${{$recommendedProduct->price}}</span><span class="impl_bnw">buy now</span></a></button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!--2-->
-                <div class="col-lg-4 col-md-6">
-                    <div class="impl_fea_car_box">
-                        <div class="impl_fea_car_img">
-                            <img src="http://via.placeholder.com/370x320" alt="" class="img-fluid impl_frst_car_img" />
-                            <img src="http://via.placeholder.com/370x320/fff" alt="" class="img-fluid impl_hover_car_img" />
-                            <span class="impl_img_tag" title="compare"><i class="fa fa-exchange" aria-hidden="true"></i></span>
-                        </div>
-                        <div class="impl_fea_car_data">
-                            <h2> <a href="purchase_new.html">Serpent</a></h2>
-                            <ul>
-                                <li><span class="impl_fea_title">model</span>
-                                    <span class="impl_fea_name">Serpent 16.6 </span></li>
-                                <li><span class="impl_fea_title">Vehicle Status</span>
-                                    <span class="impl_fea_name">new</span></li>
-                                <li><span class="impl_fea_title">Color</span>
-                                    <span class="impl_fea_name">blue</span></li>
-                            </ul>
-                            <div class="impl_fea_btn">
-                                <button class="impl_btn"><span class="impl_doller">$ 72000 </span><span class="impl_bnw">buy now</span></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--3-->
-                <div class="col-lg-4 col-md-6">
-                    <div class="impl_fea_car_box">
-                        <div class="impl_fea_car_img">
-                            <img src="http://via.placeholder.com/370x320" alt="" class="img-fluid impl_frst_car_img" />
-                            <img src="http://via.placeholder.com/370x320/fff" alt="" class="img-fluid impl_hover_car_img" />
-                            <span class="impl_img_tag" title="compare"><i class="fa fa-exchange" aria-hidden="true"></i></span>
-                        </div>
-                        <div class="impl_fea_car_data">
-                            <h2><a href="purchase_new.html">Basilisk</a></h2>
-                            <ul>
-                                <li><span class="impl_fea_title">model</span>
-                                    <span class="impl_fea_name">Basilisk 811</span></li>
-                                <li><span class="impl_fea_title">Vehicle Status</span>
-                                    <span class="impl_fea_name">new</span></li>
-                                <li><span class="impl_fea_title">Color</span>
-                                    <span class="impl_fea_name">white</span></li>
-                            </ul>
-                            <div class="impl_fea_btn">
-                                <button class="impl_btn"><span class="impl_doller">$ 72000 </span><span class="impl_bnw">buy now</span></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
     <!------ Need Help Section Start ------>
-    <div class="impl_help_wrapper">
-      
+    <div class="impl_help_wrapper d-none d-lg-block">
+
     </div>
     <!------ Service and Video Wrapper Start ------>
     <div class="impl_service_wrapper">
-        <div class="impl_service_car">
-            <img src="http://via.placeholder.com/346x503/fff" alt="" />
-        </div>
         <div class="impl_service_video">
             <div class="impl_video_inner">
                 <div class="impl_servdo_video">
-                    <span class="impl_play_icon"><a class="impl-popup-youtube" href="https://www.youtube.com/watch?v=BqjuObIH1nY"><i class="fa fa-play" aria-hidden="true"></i></a></span>
+                    <span class="impl_play_icon"><a class="impl-popup-youtube" href="https://www.youtube.com/watch?v=LuDN2bCIyus" target="_blank"><i class="fa fa-play" aria-hidden="true"></i></a></span>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 col-md-12">
-                    <div class="impl_service_left">
-                        <div class="impl_service_details">
-                            <div class="impl_heading">
-                                <h1>service</h1>
-                            </div>
-                            <div class="impl_timeline_wrapper">
-                                <ul class="impl_timeline">
-                                    <li>
-                                        <div class="impl_tl_item">
-                                            <h2>Purchase</h2>
-                                            <p>Vivamus malesuada orci a sapien rutrum, ut iaculis turpis posuere. Proin mollis sodales.</p>
-                                            <span class="impl_tl_icon">
-                      <i class="fa fa-shopping-basket" aria-hidden="true"></i>
-                    </span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="impl_tl_item impl_tl_item_rt">
-                                            <h2>sell</h2>
-                                            <p>Vivamus malesuada orci a sapien rutrum, ut iaculis turpis posuere. Proin mollis sodales.</p>
-                                            <span class="impl_tl_icon">
-                      <i class="fa fa-usd" aria-hidden="true"></i>
-                    </span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="impl_tl_item">
-                                            <h2>repair</h2>
-                                            <p>Vivamus malesuada orci a sapien rutrum, ut iaculis turpis posuere. Proin mollis sodales.</p>
-                                            <span class="impl_tl_icon">
-                      <i class="fa fa-wrench" aria-hidden="true"></i>
-                    </span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+        <div class="col-lg-7 col-md-12">
+            <div class="impl_service_left">
+                <div class="impl_service_details">
+                    <div class="impl_heading">
+                        <h1>service</h1>
+                    </div>
+                    <div class="impl_timeline_wrapper">
+                        <ul class="impl_timeline">
+                            <li>
+                                <div class="impl_tl_item">
+                                    <h2>Purchase</h2>
+                                    <p>Vivamus malesuada orci a sapien rutrum, ut iaculis turpis posuere. Proin mollis sodales.</p>
+                                    <span class="impl_tl_icon">
+              <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+            </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="impl_tl_item impl_tl_item_rt">
+                                    <h2>sell</h2>
+                                    <p>Vivamus malesuada orci a sapien rutrum, ut iaculis turpis posuere. Proin mollis sodales.</p>
+                                    <span class="impl_tl_icon">
+              <i class="fa fa-usd" aria-hidden="true"></i>
+            </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="impl_tl_item">
+                                    <h2>repair</h2>
+                                    <p>Vivamus malesuada orci a sapien rutrum, ut iaculis turpis posuere. Proin mollis sodales.</p>
+                                    <span class="impl_tl_icon">
+              <i class="fa fa-wrench" aria-hidden="true"></i>
+            </span>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -925,6 +1101,9 @@ Purchase: http://themeforest.net/user/kamleshyadav
     <script type="text/javascript" src="{{ asset('src/impelcarhtml-101/js/plugin/magnific/jquery.magnific-popup.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('src/impelcarhtml-101/js/plugin/slick/slick.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('src/impelcarhtml-101/js/plugin/nice_select/jquery.nice-select.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('src/impelcarhtml-101/js/appear.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('src/impelcarhtml-101/js/tweenmax.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('src/impelcarhtml-101/js/plugin/counter/jquery.countTo.js') }}"></script>
     <!----------Revolution slider start---------->
     <script type="text/javascript" src="{{ asset('src/impelcarhtml-101/js/plugin/revolution/js/jquery.themepunch.revolution.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('src/impelcarhtml-101/js/plugin/revolution/js/jquery.themepunch.tools.min.js') }}"></script>
