@@ -34,6 +34,8 @@ Purchase: http://themeforest.net/user/kamleshyadav
     <!----Revolution slider---->
     <link rel="stylesheet" type="text/css" href="{{ asset('src/impelcarhtml-101/js/plugin/revolution/css/settings.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('src/impelcarhtml-101/css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('src/impelcarhtml-101/css/menu_slider.css') }}">
+
     <!-- Favicon Link -->
     <link rel="shortcut icon" type="image/png" href="{{ asset('src/maracucho/img/logo_favicon.png') }}">
 </head>
@@ -275,7 +277,7 @@ Purchase: http://themeforest.net/user/kamleshyadav
         <!------ Left menu header ------>
         <div class="col-md-3 justify-content-center float-left menu-left">
             <nav class="nav flex-column" id="menu-lateral">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{{ route('home') }}">
                     <div class="loading hide">
                         <div class="loading-bar"></div>
                         <div class="loading-bar"></div>
@@ -283,7 +285,7 @@ Purchase: http://themeforest.net/user/kamleshyadav
                     </div>
                     Inicio
                 </a>
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{{ route('store') }}">
                     <div class="loading hide">
                         <div class="loading-bar"></div>
                         <div class="loading-bar"></div>
@@ -341,7 +343,6 @@ Purchase: http://themeforest.net/user/kamleshyadav
         <div class="impl_top_info">
             <ul class="impl_header_icons">
                 <li class="impl_search"><span><i class="fa fa-search" aria-hidden="true"></i></span></li>
-                <li><a href="compare.html"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
                 <li class="cart-popup"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                     <!--shopping cart box-->
                     <div class="cart-box">
@@ -359,19 +360,6 @@ Purchase: http://themeforest.net/user/kamleshyadav
                                     <i class="fa fa-times-circle" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <div class="cart-entry">
-                                <a href="#" class="image">
-                                    <img src="http://via.placeholder.com/70x60" alt="">
-                                </a>
-                                <div class="content">
-                                    <a href="#" class="title">Empire</a>
-                                    <p class="quantity">Quantity: 1</p>
-                                    <span class="price">$900.00</span>
-                                </div>
-                                <div class="button-x">
-                                    <i class="fa fa-times-circle" aria-hidden="true"></i>
-                                </div>
-                            </div>
                             <div class="summary">
                                 <div class="subtotal">Sub Total</div>
                                 <div class="price-s">$5100.0</div>
@@ -384,8 +372,56 @@ Purchase: http://themeforest.net/user/kamleshyadav
                         </div>
                     </div>
                 </li>
-                <li><a href="#signin" data-toggle="modal"><i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+
+                @if (Auth::guest())
+                    <!-- Without Authentication Links -->
+                    <li><a href="{{ route('login') }}" aria-hidden="true">Entrar</a></li>
+                    <li><a href="{{ route('register') }}" aria-hidden="true">Registrarse</a></li>
+
+                @else
+                    <!-- Authentication Links -->
+                    <li class="cart-popup"><a href="#">{{ Auth::user()->username }}</a>
+                        <!--shopping cart box-->
+                        <div class="cart-box">
+                            <div class="popup-container">
+                                <div class="cart-entry">
+                                    <div class="content">
+                                        <a href="{{ url('users/'.Auth::user()->id.'/personalData') }}" class="title">Perfil</a>
+                                    </div>
+                                </div>
+                                <div class="cart-entry">
+                                    <div class="content">
+                                        <a href="{{ url('users/'.Auth::user()->id.'/settings') }}" class="title">Configuración</a>
+                                    </div>
+                                </div>
+                                <div class="cart-entry">
+                                    <div class="content">
+                                        <a href="{{ url('users/'.Auth::user()->id.'/settings') }}" class="title">Órdenes</a>
+                                    </div>
+                                </div>
+                                <div class="cart-entry">
+                                    <div class="content">
+                                        <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="title">Salir</a>
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                @endif
+
+                <!-- Admin panel link -->
+                @if(Auth::check() && Auth::user()->admin)
+                        <li>
+                            <a href="{{ url('/admin') }}">
+                                <span class="glyphicon glyphicon-wrench"></span>Admin panel
+                            </a>
+                        </li>
+                @endif
             </ul>
+
             <div class="impl_search_overlay">
                 <div class="impl_search_area">
                     <div class="srch_inner">
@@ -412,47 +448,32 @@ Purchase: http://themeforest.net/user/kamleshyadav
         <br>
         <!------ Category slider bar header ------>
         <br>
-        <div id="menu-slider" class="col-md-6 cat-carousel slide" data-ride="carousel">
-    				<div class="carousel-inner">
-      					<div class="carousel-item active">
-        						<ul class="nav nav-justified">
-          							<li class="nav-item">
-          						      <a href="#">Chasis</a>
-          							</li>
-          							<li class="nav-item">
-          								  <a href="#">Motor</a>
-          							</li>
-          							<li class="nav-item">
-            								<a href="#">Partes y Carrocería</a>
-          							</li>
-        						</ul>
-      					</div>
-      					<div class="carousel-item">
-        						<ul class="nav nav-justified">
-          							<li class="nav-item">
-          								  <a href="#">Sistema Eléctrico</a>
-          							</li>
-          							<li class="nav-item">
-          								  <a href="#">Herramientas</a>
-          							</li>
-          							<li class="nav-item">
-          								  <a href="#">Limpieza y Mantenimiento</a>
-          							</li>
-          							<li class="nav-item">
-          								  <a href="#">Accesorios Electrónicos</a>
-          							</li>
-        						</ul>
-      					</div>
-      					<a class="carousel-control-prev" href="#menu-slider" role="button" data-slide="prev">
-          					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          					<span class="sr-only">Previous</span>
-                </a>
-      					<a class="carousel-control-next" href="#menu-slider" role="button" data-slide="next">
-          					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-          					<span class="sr-only">Next</span>
-      					</a>
-    				</div>
-  			</div>
+        <div class="container">
+          	<div class="row">
+            		<div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
+                    <div class="MultiCarousel-inner">
+                        @foreach($categories as $category)
+                            @foreach($category->subcategories as $subcategory)
+                            <div class="item">
+                                <div class="pad15">
+                                    <p class="lead"><a href="{{ url('/subcategories/'.$subcategory->id.'/products') }}">{{$subcategory->name}}</a></p>
+                                </div>
+                            </div>
+                            @endforeach
+                        @endforeach
+                    </div>
+                    <a class="leftLst" href="#menu-slider" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="rightLst" href="#menu-slider" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+          	</div>
+        </div>
+
         <!--sign-in form-->
         <div class="modal" id="signin">
             <div class="impl_signin">
@@ -794,7 +815,7 @@ Purchase: http://themeforest.net/user/kamleshyadav
 									<option value="4">Brand 4</option>
 								</select>
                                     <select>
-									<option>Select Status</option>
+									<option>SeleRevolutionct Status</option>
 									<option value="b1">Status 1</option>
 									<option value="b2">Status 2</option>
 									<option value="b3">Status 3</option>
@@ -851,8 +872,8 @@ Purchase: http://themeforest.net/user/kamleshyadav
                     <div class="col-lg-4 col-md-6">
                         <div class="impl_fea_car_box">
                             <div class="impl_fea_car_img">
-                                <img src="{{$recommendedProduct->path_to_thumbnail}}" alt="" class="img-fluid impl_frst_car_img" />
-                                <img src="{{$recommendedProduct->path_to_thumbnail}}" alt="" class="img-fluid impl_hover_car_img" />
+                                <img src="{{$recommendedProduct->path_to_thumbnail}}" alt="" class="img-fluid impl_frst_car_img" style="display:block;margin:auto;"/>
+                                <img src="{{$recommendedProduct->path_to_thumbnail}}" alt="" class="img-fluid impl_hover_car_img" style="display:block;margin:auto;"/>
                                 <span class="impl_img_tag" title="compare"><a href="{{ url('/products/'.$recommendedProduct->id) }}"><i class="fa fa-exchange" aria-hidden="true"></i></a></span>
                             </div>
                             <div class="impl_fea_car_data">
@@ -919,7 +940,7 @@ Purchase: http://themeforest.net/user/kamleshyadav
                                     <span class="impl_tl_icon">
               <i class="fa fa-wrench" aria-hidden="true"></i>
             </span>
-                                </div>
+                              Revolution  </div>
                             </li>
                         </ul>
                     </div>
@@ -1094,6 +1115,7 @@ Purchase: http://themeforest.net/user/kamleshyadav
   	<!---- Go To Top---->
   	<span class="gotop"><img src="{{ asset('src/impelcarhtml-101/images/goto.png') }}" alt=""></span>
     <!--Main js file Style-->
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="{{ asset('src/impelcarhtml-101/js/jquery.js') }}"></script>
     <script type="text/javascript" src="{{ asset('src/impelcarhtml-101/js/popper.js') }}"></script>
     <script type="text/javascript" src="{{ asset('src/impelcarhtml-101/js/bootstrap.min.js') }}"></script>
@@ -1119,6 +1141,115 @@ Purchase: http://themeforest.net/user/kamleshyadav
     <!----------Charge menu start---------->
     <script type="text/javascript" src="{{ asset('src/maracucho/js/custom.js') }}"></script>
     <!--Main js file End-->
+    <!----------Text slider start---------->
+    <script type="text/javascript">
+    $(document).ready(function () {
+        var itemsMainDiv = ('.MultiCarousel');
+        var itemsDiv = ('.MultiCarousel-inner');
+        var itemWidth = "";
+
+        $('.leftLst, .rightLst').click(function () {
+            var condition = $(this).hasClass("leftLst");
+            if (condition)
+                click(0, this);
+            else
+                click(1, this)
+        });
+
+        ResCarouselSize();
+
+
+
+
+        $(window).resize(function () {
+            ResCarouselSize();
+        });
+
+        //this function define the size of the items
+        function ResCarouselSize() {
+            var incno = 0;
+            var dataItems = ("data-items");
+            var itemClass = ('.item');
+            var id = 0;
+            var btnParentSb = '';
+            var itemsSplit = '';
+            var sampwidth = $(itemsMainDiv).width();
+            var bodyWidth = $('body').width();
+            $(itemsDiv).each(function () {
+                id = id + 1;
+                var itemNumbers = $(this).find(itemClass).length;
+                btnParentSb = $(this).parent().attr(dataItems);
+                itemsSplit = btnParentSb.split(',');
+                $(this).parent().attr("id", "MultiCarousel" + id);
+
+
+                if (bodyWidth >= 1200) {
+                    incno = itemsSplit[3];
+                    itemWidth = sampwidth / incno;
+                }
+                else if (bodyWidth >= 992) {
+                    incno = itemsSplit[2];
+                    itemWidth = sampwidth / incno;
+                }
+                else if (bodyWidth >= 768) {
+                    incno = itemsSplit[1];
+                    itemWidth = sampwidth / incno;
+                }
+                else {
+                    incno = itemsSplit[0];
+                    itemWidth = sampwidth / incno;
+                }
+                $(this).css({ 'transform': 'translateX(0px)', 'width': itemWidth * itemNumbers });
+                $(this).find(itemClass).each(function () {
+                    $(this).outerWidth(itemWidth);
+                });
+
+                $(".leftLst").addClass("over");
+                $(".rightLst").removeClass("over");
+
+            });
+        }
+
+
+        //this function used to move the items
+        function ResCarousel(e, el, s) {
+            var leftBtn = ('.leftLst');
+            var rightBtn = ('.rightLst');
+            var translateXval = '';
+            var divStyle = $(el + ' ' + itemsDiv).css('transform');
+            var values = divStyle.match(/-?[\d\.]+/g);
+            var xds = Math.abs(values[4]);
+            if (e == 0) {
+                translateXval = parseInt(xds) - parseInt(itemWidth * s);
+                $(el + ' ' + rightBtn).removeClass("over");
+
+                if (translateXval <= itemWidth / 2) {
+                    translateXval = 0;
+                    $(el + ' ' + leftBtn).addClass("over");
+                }
+            }
+            else if (e == 1) {
+                var itemsCondition = $(el).find(itemsDiv).width() - $(el).width();
+                translateXval = parseInt(xds) + parseInt(itemWidth * s);
+                $(el + ' ' + leftBtn).removeClass("over");
+
+                if (translateXval >= itemsCondition - itemWidth / 2) {
+                    translateXval = itemsCondition;
+                    $(el + ' ' + rightBtn).addClass("over");
+                }
+            }
+            $(el + ' ' + itemsDiv).css('transform', 'translateX(' + -translateXval + 'px)');
+        }
+
+        //It is used to get some elements from btn
+        function click(ell, ee) {
+            var Parent = "#" + $(ee).parent().attr("id");
+            var slide = $(Parent).attr("data-slide");
+            ResCarousel(ell, Parent, slide);
+        }
+
+    });
+    </script>
 </body>
 
 </html>

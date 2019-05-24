@@ -1656,8 +1656,6 @@ p.slogan strong {
 .impl_fea_car_img .impl_hover_car_img {
     opacity: 0;
     position: absolute;
-    top: 0;
-    left: 0;
     transition: all 0.9s ease 0s;
     -webkit-transition: all 0.9s ease 0s;
     -moz-transition: all 0.9s ease 0s;
@@ -2665,7 +2663,7 @@ p.impl_ser_para {
 /*----About Page Css start-----*/
 
 .impl_bread_wrapper {
-    background-image: url(http://via.placeholder.com/1920x360);
+    background-image: url('../../pedro/CCX.jpg');
     background-size: cover;
     position: relative;
     padding: 136px 0px;

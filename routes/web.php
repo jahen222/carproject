@@ -12,6 +12,7 @@
 */
 
 Route::get('/home', 'IndexController@index');
+Route::get('/', 'IndexController@home')->name('home');
 
 Auth::routes();
 
@@ -156,4 +157,4 @@ Route::post('/subscribe', 'SubscribeController@store');
 /**
  * Store
  */
-Route::get('/store', 'StoreController@index');
+Route::get('/store', 'StoreController@index')->name('store');
